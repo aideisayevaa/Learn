@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        var x = 3;
+        var y = 3.5;
+        var z = 37e11; //3700000000000
+        var z2 = 37e-6; //0.000037
+
+        // document.write(z2)
+
+
+        /* 
+        string + string , string + number = string
+
+        string * number , string / number = NaN (not a number)
+        */
+
+
+
+        /* Tostring */
+
+        var x = 3;
+
+        x.toString();
+        // document.writeln(typeof x) //number
+
+        //stringe cevirdikden sonra yeniden x-e menimsetmeliyik
+        x = x.toString();
+        // document.write(typeof x) //string
+
+
+
+        /* ToExponential */
+
+        var a = 318.54347883;
+
+        a = a.toExponential(2); //quvvet formasinda gosterir
+        document.write(a)
+        document.write(typeof a)
+
+
+
+
+        /* ToExponential */
+
+        var b = 318.54347883;
+
+        b = b.toFixed(2); //vergulden sonra nece reqemin gosterilmesidi
+        document.write(b)
+        document.write(typeof b)
+
+
+
+        /* ToPrecision */
+
+        var c = 318.54347883;
+
+        c = c.toPrecision(5); //ededlerin ilk 5 reqemini gosterir 
+        document.write(c)
+        document.write(typeof c)
+
+
+
+
+        /* Stringden Number-e kecid */
+
+        var m = "6"
+        m = Number(m)
+        document.write(" m: " + m)
+        document.write(" m-type: " + typeof m) //m: 6 m-type: number
+
+        var n = "6.15"
+        n = Number(n)
+        document.write(" n: " + n)
+        document.write(" n-type: " + typeof n) // n: 6.15 n-type: number
+
+        var t = "6,15"
+        t = Number(t)
+        document.write(" t: " + t)
+        document.write(" t-type: " + typeof t) //t: NaN t-type: number
+
+        var l = "6 10"
+        l = Number(l)
+        document.write(" l: " + l)
+        document.write(" l-type: " + typeof l) //l: NaN l-type: number
+
+
+        document.write(" Stringden Int-e kecid")
+            /* Stringden Int-e kecid */
+
+        var m1 = "6"
+        m1 = parseInt(m1)
+        document.write(" m1: " + m1)
+        document.write(" m1-type: " + typeof m1) //m: 6 m-type: number
+
+        var n1 = "6.15"
+        n1 = parseInt(n1)
+        document.write(" n1: " + n1)
+        document.write(" n1-type: " + typeof n1) // n: 6 n-type: number
+
+        var t1 = "6,15"
+        t1 = parseInt(t1)
+        document.write(" t1: " + t1)
+        document.write(" t1-type: " + typeof t1) //t: 6 t-type: number
+
+        var l1 = "6 10"
+        l1 = parseInt(l1)
+        document.write(" l1: " + l1)
+        document.write(" l1-type: " + typeof l1) //l: 6 l-type: number
+
+
+
+        /* parseFloat */
+        var k = "6.15" //tekce noqte olanlari duzgun qebul  edir
+        k = parseFloat(k)
+        document.write(" k: " + k)
+        document.write(" k-type: " + typeof k) //k: 6.15 k-type: number
+
+
+
+
+        /* MAX VALUE */
+
+        var maxNum
+
+        maxNum = Number.MAX_VALUE;
+        document.writeln(maxNum)
+
+
+
+        /* MIN VALUE */
+
+        var minNum
+
+        minNum = Number.MIN_VALUE;
+        document.write(minNum)
+
+
+
+        /* POSITIVE INFINITIV */
+
+        var positive
+
+        positive = Number.POSITIVE_INFINITY;
+        document.write(positive) //Infinity
+
+
+        /* NEGATIVE INFINITIV */
+
+        var negative
+
+        negative = Number.NEGATIVE_INFINITY;
+        document.write(negative) // -Infinity
+    </script>
+
+</body>
+
+</html>
