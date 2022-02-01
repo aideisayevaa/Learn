@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+
+        5 tip veriable var:
+            - Number
+            - String
+            - Boolean
+            - Array
+            - Object
+
+        var - variable sozunun qisaltmasidi 5 tipi de ozunde saxlaya bilir
+
+
+     -->
+
+    <script>
+        //Number
+        var say1 = 10
+        document.write(say1)
+
+        var say2 = 10 + 15
+        document.write(say2)
+
+        document.write(say1 + say2)
+
+        /* deyer vermeden teyin etmek */
+        var sayi;
+        sayi = 1
+        document.write(sayi)
+
+        var sayi2;
+        document.write(sayi2) //undifined
+
+        //String
+
+        var isim = "salam"
+
+        var message = "Xos geldiniz"
+
+        // alert(message);
+
+        document.write(isim)
+
+        //string ve numberi toplamaq olar
+
+        var a = 2 + 7 + "5"
+        document.write(a) //95
+            //ilk once 2 ve 7ni toplayib 9 aldi sonra 9+"5" 95 yazdi
+
+
+        //Boolean
+        //iki deyeri var : true ve false
+
+        document.write(10 == 11)
+        document.write(10 == 10)
+        document.write(10 === "10")
+
+
+        //Array
+
+        var meyveler = ["alma", "armud", "nar", 1, 2]
+        document.write(meyveler)
+        document.write(meyveler[2]) //indexler 0dan baslayir
+
+
+        //Object
+
+        var person = {
+            ad: "Aida",
+            soyad: "Isayeva",
+            yas: 19
+        }
+        document.write(person) //[object Object]
+        document.write(person.yas)
+        document.write(person["yas"])
+
+
+        //Typeof
+
+        document.write(typeof person)
+
+
+        //const
+        // deyismeyen deyerler tutmaq ucun isledilir
+
+        const tarix = 20
+        tarix = 9 //bunu yazanda console-de Assignment to constant variable. xetasi cixir
+        document.write(tarix)
+    </script>
+
+
+
+</body>
+
+</html>

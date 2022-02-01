@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //bir nece yerde yazdigimiz kodlari bir funksiyaya yigaraq yaza bilerik
+
+        //  document.getElementById().innerHTML = "" //bunun ozu de bir funksiyadir
+
+
+        //Functions
+
+        function funksiyaAdi() {
+            document.write("hello1")
+        }
+
+        funksiyaAdi();
+
+
+
+
+        function funksiyaAdi2(ad, soyad) {
+            document.write("hello2 " + ad + " " + soyad)
+        }
+
+        funksiyaAdi2("Aida", "Isayeva");
+
+
+
+        function funksiyaAdi3(ad, soyad) {
+            return " hello3 " + ad + " " + soyad
+                //returnden sonra hecne yazilmir funksiyani bitirir
+        }
+
+        // document.write(funksiyaAdi3("Aida", "Isayeva"))
+
+
+        var x = funksiyaAdi3("Aida", "Isayeva")
+        document.write(x)
+
+
+
+        /* Returnlu ve returnsuz funksiyalar arasindaki ferq: */
+        //1
+        function toplama1(say1, say2) {
+            return say1 + say2
+        }
+
+        var sum1 = toplama1(4, 5) * 5
+        document.write(sum1)
+
+        //2
+        function toplama2(say1, say2) {
+            document.write(say1 + say2)
+        }
+
+        // var sum2 = toplama2(4, 5)
+        // document.write(sum2)   //undifined cixir
+
+        toplama2(4, 5) //bele yazanda cixmir cunki zaten funksiyanin icinde ekrana yazdirirq ikinci defe yazdirmaga ehtiyac qalmir
+
+
+        /* yeni return olmadiqda sadece ekrana yazi cixarir hansisa emaliyyat ucun isledilmir
+        return olduqda ise biz onun uzerinde ememliyyatlar apara ededlere vurub bole ve s. ola biler */
+
+
+
+
+        function tonHesabla(kiloqram) {
+            var x = kiloqram / 1000
+            return x
+        }
+
+        var a = tonHesabla(500)
+        document.write(a + " ton")
+    </script>
+</body>
+
+</html>
