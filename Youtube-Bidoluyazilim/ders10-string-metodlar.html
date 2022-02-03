@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        var x = "javascript ile web tasarim oyreniyorum web"
+
+        /* Length */
+        //bosluqlari da sayir
+        var uzunluq = x.length
+            // document.writeln(uzunluq)
+
+
+        /* IndexOf */
+        //yazilan sozun necenci indexden basladigini gosterir indexin sayilmasi 0dan baslayir
+        var index = x.indexOf("web")
+            // document.writeln(index)
+
+
+        /* lastIndexOf */
+        //yazilan sozun cumlede axtarir en axrincisinin indexsini ekrana cixarir
+        var lastIndex = x.lastIndexOf("web")
+            // document.writeln(lastIndex)
+
+
+        /* search */
+        //indexOf ile eyni
+        var searchIndex = x.search("web")
+            // document.writeln(searchIndex)
+
+
+
+        /* slice */
+        //8ci indexden evvelini gostermir
+        var sliceElement = x.slice(8)
+            // document.writeln(sliceElement)
+
+        //8 ile 15 arasini gosterir
+        var sliceElement2 = x.slice(8, 15)
+            // document.writeln(sliceElement2)
+
+        //axirdan evvele sayir
+        var sliceElement3 = x.slice(-15, -7)
+            // document.writeln(sliceElement3)
+
+
+        /* substring */
+        //slice kimidi, menfi index yazmaq olmur
+        var substringElement = x.substring(8, 15)
+            // document.writeln(substringElement)
+
+
+        /* substring */
+        //8den sonra 3 elementi goturur
+        var substrElement = x.substr(8, 3)
+            // document.writeln(substrElement)
+
+        var substrElement = x.substr(8)
+            // document.writeln(substrElement)
+
+
+        /* replace */
+        //web yazilan ilk sozu tapir amma sozu ile deyisir
+        var replaceElement = x.replace("web", "amma")
+            // document.writeln(replaceElement)
+
+        //eger biz boyuk herfle yazsaq onu asagidaki formada yazmaliyiq
+        var replaceElement2 = x.replace(/WEB/i, "amma")
+            // document.writeln(replaceElement2)
+
+        //butun web sozlerini deyismek istesek:
+        var replaceElement3 = x.replace(/web/g, "amma")
+            // document.writeln(replaceElement3)
+
+
+
+        /* toUpperCase */
+        //boyuk herfle yazir
+        var upperCaseElement = x.toUpperCase()
+            // document.writeln(upperCaseElement)
+
+        /* toLowerCase */
+        //kicik herfle yazir
+        var lowerCaseElement = x.toLowerCase()
+            // document.writeln(lowerCaseElement)
+
+
+
+        /* concat */
+        // iki stringi birlesdirir
+        var y = "bidoluyazilim"
+        var mixString = x.concat(" ", y)
+            // document.writeln(mixString)
+
+
+
+
+        /* trim */
+        var x1 = "         javascript ile web tasarim oyreniyorum web           "
+
+        // document.write(x1.length)
+        // document.writeln(x1)
+
+        var trimElement = x1.trim()
+
+        // document.write(trimElement.length)
+        // document.writeln(trimElement)
+
+
+
+        /* charAt */
+        // 15ci char elementi gosterir
+        var charElement = x.charAt(15)
+            // document.writeln(charElement)
+
+
+        /* charCodeAt */
+        // 15ci char elementinin uni kodunu gosterir
+        var charElement2 = x.charCodeAt(15)
+            // document.writeln(charElement2)
+
+
+        /* split */
+        // morterize daxilinde ne yaziriqsa ona gore bolum arraya yigir
+        var x2 = "a,b,c,d"
+        var splitElement = x2.split(",")
+        document.writeln(splitElement[0])
+    </script>
+
+</body>
+
+</html>
