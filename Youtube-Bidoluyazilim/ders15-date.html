@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var tarix = new Date(2020, 11, 16, 15, 30, 22, 00) //bu Date adli objectin hazir funksiyalari var ona gore bu obyektden istifade olunur
+            //hemin bu Date adli obyekti tarix adli deyisene menimsedib edeceyimiz emeliyyatlari tarix deyiseni uzerinden aparacagiq
+
+
+        // document.write(tarix) //Wed Dec 16 2020 15:30:22 GMT+0400 (Azerbaycan Standart Saati)
+        // document.write(tarix.toString()) //stringe kecdi 
+        //document.write(tarix.toUTCString()) //Wed, 16 Dec 2020 11:30:22 GMT
+
+
+
+        /* INDIKI TARIXI TAPMAQ */ ////// /* GET */
+
+        var indikiTarix = new Date()
+            // document.write(indikiTarix.getTime()) //1643899218272 - indiki saati millisaniyede yazir
+            // document.write(indikiTarix.getFullYear()) //indiki ili gosterir
+            // document.write(indikiTarix.getMonth()) //indiki ayi gosterir amma index kimi ssayir yeni indi fevral ayidisa 1 yazir
+            // document.write(indikiTarix.getDate()) //indiki gunu gosterir
+            // document.write(indikiTarix.getHours()) //indiki saati gosterir
+            // document.write(indikiTarix.getMinutes()) //indiki deqiqeni gosterir
+            // document.write(indikiTarix.getSeconds()) //indiki saniyeni gosterir
+            // document.write(indikiTarix.getMilliseconds()) //indiki millisaniyeni gosterir
+            //document.write(indikiTarix.getDay()) //necenci gun oldugunu gosterir 
+
+
+
+
+        /* SET */
+        //yuxarida yazilan get-lerin evezine set yazanda ozumuzden tarix elave etmis oluruq
+        //bu zaman onu basqa dayisene menimsetmek olmur
+        var tarix2 = new Date()
+
+        tarix2.setFullYear(2000) //Thu Feb 03 2000 18:50:56 GMT+0400 (Azerbaycan Standart Saati)
+        document.write(tarix2)
+    </script>
+</body>
+
+</html>

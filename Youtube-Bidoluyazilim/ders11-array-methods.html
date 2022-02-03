@@ -36,11 +36,26 @@
         // var test = meyveler.shift()
 
         //arrayin evveline element artirir ve sayi gosterir
-        var test = meyveler.unshift("ananas")
+        // var test = meyveler.unshift("ananas")
 
+        //1 ve 1den sonraki indexdekileri gosterir
+        // var test = meyveler.slice(1)
+        // var test = meyveler.slice(1,3) //1 ve 3cu index arasindakilari goturur 1 daxildi 3 daxil deyil
+
+
+        //2ci indexden evvele ciyelek sozunu artirir 2ci indexden sonra 1 elementi silir(yeni hecneyi silmir)
+        // meyveler.splice(2, 1, "ciyelek")
+        //bunu deyisene menimsetmek olmur funksiya kimi yazandan sonra document.write(meyveler) yaziriq
+        //meyveler.splice(2, 1, "ciyelek","malina") //iki element artirir
+        //meyveler.splice(1, 1) 
+
+
+        //iki arrayi birlesdirir
+        var terevezler = ["pomidor", "kok", "kelem"]
+        var test = meyveler.concat(terevezler)
 
         document.write(test)
-        document.write(meyveler)
+            // document.write(meyveler)
     </script>
 </body>
 

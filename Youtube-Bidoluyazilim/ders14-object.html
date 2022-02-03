@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //hem dirnaqla hem dirnaqsiz yazmaq olar
+        //hem de funksiya yazmaq olar
+        var isci = {
+            ad: "Doruk",
+            "soyad": "Akgul",
+            maas: "2000",
+
+            tamAd: function() {
+                return this.ad + " " + this.soyad
+            },
+
+            text: function() {
+                return this.ad + " adli iscinin maasi 10 % artdi"
+            }
+
+        }
+
+        // document.write(isci.ad)
+        // document.write(isci["soyad"])
+        // document.write(isci.soyad)
+        document.write(isci.tamAd())
+        document.write(isci.text())
+    </script>
+</body>
+
+</html>

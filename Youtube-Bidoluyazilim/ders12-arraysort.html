@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <script>
+        /* herf olanlar */
+
+        var a = ["alma", "armud", "nar", "uzum", "malina"]
+
+        //document.getElementById("div1").innerHTML = a + "<br></br>"
+
+        //elifba sirasi ile duzur
+        // a.sort()
+
+        //arrayin elementlerini sondan evvele yigir
+        // a.reverse()
+
+
+        //document.getElementById("div2").innerHTML = a + "<br></br>"
+
+
+
+        /* Reqem olanlar */
+        var b = ["14", "67", "1", "8", "33"]
+
+        //document.getElementById("div1").innerHTML = b + "<br></br>"
+
+
+        //ilk reqemini 1den 9a duzur sonra 2ci reqemlerini 1den 9a duzur ve s.
+        // b.sort()
+
+
+        //kicikden boyuye siralayir
+        // b.sort(function(x, y) {
+        //     return x - y
+        // })
+
+        //yuxariki kodu yazdiqdan sonra var c= b[0] yazsaq bize en kicik ededi verir
+
+
+        //boyukden kiciye siralayir
+        // b.sort(function(x, y) {
+        //     return y - x
+        // })
+
+        //document.getElementById("div2").innerHTML = b + "<br></br>"
+
+
+
+
+
+        /* Object olanlar */
+
+        var c = [{
+            marka: "Mercedes",
+            yil: 2010
+        }, {
+            marka: "Honda",
+            yil: 2005
+        }, {
+            marka: "Renault",
+            yil: 2015
+        }]
+
+
+        function arabalariGoster() {
+            document.getElementById("div1").innerHTML =
+
+                c[0].marka + " " + c[0].yil + "<br>" +
+                c[1].marka + " " + c[1].yil + "<br>" +
+                c[2].marka + " " + c[2].yil + "<br>"
+        }
+
+
+        function sirala() {
+            c.sort(function(a, b) {
+                return a.yil - b.yil
+            })
+
+            arabalariGoster()
+        }
+
+        arabalariGoster()
+        sirala()
+    </script>
+</body>
+
+</html>

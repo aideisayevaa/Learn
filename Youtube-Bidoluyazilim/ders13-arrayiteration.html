@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1"></div>
+    <script>
+        /* FOREACH */
+
+
+        /* var sayi = [45, 60, 27, 36, 102, 55, 8]
+
+        //foreach - arrayin her elementini bir bir axtarir
+        var yazi = ""
+
+        function yazdir(value, index, array) {
+            yazi = yazi + value + "<br>"
+        }
+
+        sayi.forEach(yazdir)
+
+        document.getElementById("div1").innerHTML = yazi */
+
+
+
+
+        /* MAP */
+        /* Yeni array yaradir */
+
+        /*  var sayi = [45, 60, 27, 36, 102, 55, 8]
+
+         function ucleCarp(value, index, array) {
+             return value * 3
+         }
+
+         var sayi2 = sayi.map(ucleCarp)
+
+         document.getElementById("div1").innerHTML = sayi2
+         document.write(sayi) */
+
+
+
+
+
+        /* FILTER */
+
+        /* var sayi = [45, 60, 27, 36, 102, 55, 8]
+
+        function test(value, index, array) {
+            return value > 30
+        }
+
+        var sayi2 = sayi.filter(test)
+
+        document.getElementById("div1").innerHTML = sayi2
+        document.write(sayi) */
+
+
+
+
+
+
+
+
+        /* REDUCE , REDUCERIGHT  */
+
+        /* var sayi = [45, 60, 27, 36, 102, 55, 8]
+
+        function test(total, value, index, array) {
+            return total + value
+        }
+
+        var sayi2 = sayi.reduce(test) //cemi tapir
+
+        document.getElementById("div1").innerHTML = sayi2 */
+
+
+
+
+
+
+
+
+        /* EVERY */
+        // serti yoxlayir eger duzgundurse true yanlisdirsa false cixarir
+        // burada butun hamisi 30dan boyuk olmalidir 1i kicik olanda false cixarir
+        /* var sayi = [45, 60, 27, 36, 102, 55, 8]
+
+        function test(value, index, array) {
+            return value > 30
+        }
+
+        var sayi2 = sayi.every(test)
+
+        document.getElementById("div1").innerHTML = sayi2 */
+
+
+
+
+
+
+
+
+        /* SOME */
+        // serti yoxlayir eger duzgundurse true yanlisdirsa false cixarir
+        // burada en az 1i 30dan boyuk olmalidir
+        /*   var sayi = [45, 60, 27, 36, 102, 55, 8]
+
+        function test(value, index, array) {
+            return value > 30
+        }
+
+        var sayi2 = sayi.some(test)
+
+        document.getElementById("div1").innerHTML = sayi2
+ */
+
+
+
+
+
+        /* FIND  ,  FINDINDEX  */
+        // verilen serte uygun ilk elementi cixarir
+        // findindex- verilen serte uygun ilk elementin indexini cixarir
+        /*  var sayi = [45, 60, 27, 36, 102, 55, 8]
+
+         function test(value, index, array) {
+             return value > 30
+         }
+
+         var sayi2 = sayi.find(test)
+         var sayi3 = sayi.findIndex(test)
+
+
+         document.getElementById("div1").innerHTML = sayi2 */
+
+
+
+
+
+
+
+
+
+        /* INDEXOF */
+        //indexof daxiline yazilan deyerin indexsini tapir - ilk deyerin
+        //eger cavab olaraq -1 cixarsa arrayda bu deyerin olmadigini gosterir
+
+        /*   var sayi = [45, 60, 27, 36, 102, 55, 8, 36]
+
+          var sayi2 = sayi.indexOf(36)
+
+          document.getElementById("div1").innerHTML = sayi2 */
+
+
+
+        /* LASTOF */
+        //indexof daxiline yazilan deyerin indexsini tapir - son deyerin
+
+        var sayi = [45, 60, 27, 36, 102, 55, 8, 36]
+
+        var sayi2 = sayi.lastIndexOf(36)
+
+        document.getElementById("div1").innerHTML = sayi2
+    </script>
+</body>
+
+</html>
