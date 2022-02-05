@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*  Stringe cevirme */
+
+        // var a = String(10)
+        // var a = String(false)
+        // var a = String(Date()) //normalda ise Date-in type-i objectdir
+        // document.write(typeof new Date) //object
+
+
+        /* ToString */
+        // var a = 10
+        // a = a.toString()
+
+
+
+
+
+        /*  NUmbere kecme */
+
+        // var a = Number("10")
+        // var a = Number(false) //0
+        // var a = Number(true) //1
+
+        // var a = Number(new Date()) //1643954764160number
+
+
+
+
+        // document.write(a)
+        // document.write(typeof a)
+
+
+        /* constructor */
+        //sahib olduqlari funksiyalari verir 
+
+        // var a = ["alma", "uzum", "nar"] //function Array() { [native code] }
+        // var b = "Javascript" //function String() { [native code] }
+        // var c = 10 //function Number() { [native code] }
+        // var d = true    //function Boolean() { [native code] }
+
+
+        // document.write(d.constructor)
+
+
+
+
+
+        //deyisenin array olub olmadigini yoxlamaq 
+
+        var a = ["alma", "uzum", "nar"]
+
+        function kontrol(x) {
+            return x.constructor.toString().indexOf("Array") > -1
+                //burada parametr olan xi goturur constructor ile onun funksiyasini tapib stringe cevirir sonra bu stringde Array sozunun olub olmadigini yoxlayir
+        }
+        var b = kontrol(a)
+        document.write(b)
+    </script>
+</body>
+
+</html>

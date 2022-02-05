@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1
+
+        // var x = 5
+        // var y = 4
+        // if (x < y) {
+        // document.write("x y'den kucukdur")
+        //  } else {
+        //   document.write("x y'den buyukdur")
+        // }
+
+
+        //2
+
+        /*    var yas = window.prompt("Lutfen yasinizi giriniz", 0) //eger hec bir deyer daxil edilmezse 0 olaraq qebul edir
+
+        if (yas < 18) {
+            document.write("Giris yapamazsiniz")
+        } else if (yas >= 18 && yas <= 25) {
+            document.write("Giris yapa bilirsiniz.Bir adet icecek haqqiniz var")
+        } else {
+            document.write("Giris yapa bilirsiniz")
+        }
+
+ */
+
+
+
+
+        //3
+        var saat = new Date().getHours() //indiki saati goturur
+
+        if (6 < saat && saat < 12) {
+            document.write("Gunaydin")
+        } else if (12 <= saat && saat < 19) {
+            document.write("Iyi gunler")
+        } else if (19 <= saat && saat < 23) {
+            document.write("Iyi aksamlar")
+        } else {
+            document.write("Iyi geceler")
+        }
+    </script>
+</body>
+
+</html>

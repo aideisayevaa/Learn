@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //netice olaraq iki cavab cixir true ve false
+        // var a = 10
+        // var b = "10"
+
+        // var c = (a == b) //a ve b nin qiymetlerini muqayise edir ve true cixarir
+        // var c1 = (a === b) //a ve b nin hem qiymetlerini hem tiplerini muqayise edir ve false cixarir
+        // var c2 = (a != b) //qiymetleri beraber deyilmi
+        // var c3 = (a !== b) //qiymetleri ve tipleri beraber deyilmi
+        // var c = (a > b)
+        // var c = (a < b)
+        // var c = (a >= b)
+        // var c = (a <= b)
+        // document.write(c3)
+
+
+
+
+        /* Logical operation */
+
+        // && - and
+        // || - or
+
+        var a = 10
+        var b = 100
+        var x = 15
+        var y = 20
+        var c = (a < b) && (x > y)
+        document.write(c)
+
+        var c1 = (a > b) || (x > y)
+        document.write(c1)
+
+
+        var c1 = (a > b) || !(x > y) //sag teref eslinde false ! yazanda eksini yeni true goturur
+        document.write(c1)
+    </script>
+</body>
+
+</html>
