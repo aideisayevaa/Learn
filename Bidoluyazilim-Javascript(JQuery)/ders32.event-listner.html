@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            height: 100px;
+            width: 100%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  <div id="div1"></div>
+
+    <button id="btn">Tikla</button>
+
+
+    <script>
+        //biz teg daxiline onclick yazirdiq onun scriptde yazilmis formasi addEventListnerdi 
+        //evvelce tagi secirik sonra addEventListener yaziriq click yazaraq bu tege kliklemeli oldugumuzu bildiririrk (bura tekce click yox 31ci dersde kecilenlerden de yazmaq olar)
+        // function yazaraq ise tag-a klikleyende hansi funksiyani yerine nyetureceyimizi deyirik
+        document.getElementById("btn").addEventListener("click", function() {
+            document.getElementById("div1").innerHTML = 'Butona kliklendi'
+            document.getElementById("div1").style.backgroundColor = 'green'
+
+        })
+    </script> -->
+
+
+    <div id="div1"></div>
+
+    <button id="btn">Tikla</button>
+
+    <script>
+        var a = prompt("Metni daxil edin: ")
+        var b = document.getElementById("btn")
+        b.addEventListener("click", function() {
+            document.getElementById("div1").innerHTML = a
+        })
+
+
+        /* buna yeniden baxmaq lazimdi */
+        b.removeEventListener("click")
+    </script>
+</body>
+
+</html>

@@ -30,6 +30,11 @@
             width: 100%;
             background-color: green;
         }
+        
+        p {
+            font-size: 35px;
+            color: red;
+        }
     </style>
 </head>
 
@@ -37,7 +42,7 @@
 
 
 
-    <div id="div1" class="class1"></div>
+    <div id="div1" class="class1">JS</div>
     <div id="div2" class="class1"></div>
     <div id="div3" class="class1"></div>
     <div id="div4" class="class1"></div>
@@ -48,10 +53,20 @@
 
 
     <script>
-        document.getElementById("div1").innerHTML = "javascript"
+        //div-in ve ya classin daxiline metn elave etmek
+        //document.getElementById("div1").innerHTML = "javascript"
 
 
-        //1:59
+        //div-de yazilani div-de gostermek
+        // var a = document.getElementById("div1").innerHTML //burada innerHTML-den sonra ="" yazmasa onu gosterirki a deyisenine div1de yazilan yazini menimsedirik
+        // document.getElementById("div3").innerHTML = "<p>" + a + "</p>"
+
+
+        /* innertext eynile innerHTML kimidi tek ferqi tag isarelerini de metn kimi gorur */
+
+
+        /* remove() */
+        document.getElementById("div4").remove() //div4-u sildi
     </script>
 </body>
 

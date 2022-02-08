@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            height: 100px;
+            width: 100%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <div id="div1"></div> -->
+
+    <!-- klaviaturadan inputa nese yazanda funksiyani ise salir -->
+    <!-- <input onkeypress="keyboard()" type="text"> -->
+
+
+
+    <!-- <input onkeyup="alert('Kutuya yazi yazildi - onkeyup')" type="text"> -->
+
+
+
+    <!-- <input onkeydown="alert('Kutuya yazi yazildi - onkeydown')" type="text"> -->
+
+
+    <!-- onkeyup - yazini yazanda funksiya isleyir meselen
+         alert yazdiq o funksiya isleyir funksiya isleyende 
+         inputa ne yazdigimiz gorunur amma onkeydown - da 
+         alertin tamam butonuna klikledikden sonra yazdigimiz 
+         gorunur -->
+
+
+
+    <script>
+        function keyboard() {
+            document.getElementById("div1").innerHTML = "Kutuya yazi yazildi"
+        }
+    </script>
+
+
+
+
+    <!-- onmousemove - inputun uazerine gelende onmousemove daxilindeki funksiya yerine yetirilir
+    mausu kenarlasdiranda funksiya yene de yerine yetirilir -->
+    <!-- <input onmousemove="keyboard2()" type="text" id="text1"> -->
+
+    <!-- bu da onmusemove kimidi -->
+    <!-- <input onmouseover="keyboard2()" type="text" id="text1"> -->
+
+    <!-- onmouseout - onmousemove-un tersidi -->
+    <input onmousemove="keyboard2()" onmouseout="keyboard3()" type="text" id="text1">
+
+    <script>
+        function keyboard2() {
+            document.getElementById("text1").style.width = "300px"
+            document.getElementById("text1").style.height = "300px"
+
+        }
+
+
+        function keyboard3() {
+            document.getElementById("text1").style.width = "70px"
+            document.getElementById("text1").style.height = "70px"
+
+        }
+    </script>
+
+
+</body>
+
+</html>
