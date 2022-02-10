@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            height: auto;
+            width: 50%;
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <p id="p1">Birinci Paragraf</p>
+        <p id="p2">Ikinci Paragraf</p>
+        <p id="p3">Ucuncu Paragraf</p>
+        <p id="p4">Dorduncu Paragraf</p>
+    </div>
+
+
+    <script>
+        /* p tegi yaradir, p-nin evezine basqa tegler de yaza bilerik */
+        var x = document.createElement("p")
+
+        //yaradilacaq tegin terkibini yazmaq ucun istifade olunur, amma heleki hec bir yaradilmis tege menimsetmediyimiz ucun hec bir tesiri yoxdur
+        var y = document.createTextNode("Besinci paragraf")
+
+        //bunu yazanda ayri ayri yazdiqlarimizi birlesdirmis oluruq
+        x.appendChild(y)
+
+
+        //bunu yazanda ise div1-i a deyisenine menimsedirik sonra yaratdigimiz p-ni div daxilinde gostere bilmek ucun
+        //terkibine de y elave etdiyimiz xi appendChild ile a-nin yeni divin daxiline atiriq
+        var a = document.getElementById("div1")
+            /*  a.appendChild(x) */
+
+        //yuxaridaki qayda ile div daxilinde en sona elave edilir amma biz yeni yaradilan tag-i p3den evvel yazmaq istesek:
+
+        //ilk once p-lerin daxil oldugu classin yeni div-in oldugu deyisen sonra insertBefore daxilinde yeni yaradilan tegin oldugu deyisen sonra ise tegden evvel olacagi
+        // a.insertBefore(x, document.getElementById("p3"))
+
+
+        //p4 a daxilinde oldugu ucun birinci a yaziriq p4-u silir
+        // a.removeChild(document.getElementById("p4"))
+
+
+        //y daxilinde yazilani replace edib p2ye yazdirmaq istesek
+        // a.replaceChild(y, document.getElementById("p2"))
+
+
+        //a deyende div1-e gedir
+        //id-nin deyerini deyisdirmek isteyirikse
+        //a.setAttribute("id", "div2") //inspektden baxanda deyisdiyini goruruk
+
+
+
+        /*burada ilk once deyisen yaradiriq ki yaradilacaq attribute bura menimsedilsin
+        sonra  createAttribute yazib hansi atribut yazacagimizi teyin edirik
+        value veririk sonra ise a.setAttributeNode(deneme) yazib a dsxiline yeni div1-in yanina 
+        elave edirik inspecte baxanda goruruk ki class="test"
+        elave edilib   */
+        var deneme = document.createAttribute("class")
+        deneme.value = "test"
+
+        a.setAttributeNode(deneme)
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            height: auto;
+            width: 50%;
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <p id="p1">Birinci Paragraf</p>
+        <p id="p2">Ikinci Paragraf</p>
+        <p id="p3">Ucuncu Paragraf</p>
+        <p id="p4">Dorduncu Paragraf</p>
+    </div>
+
+
+    <script>
+        // document.getElementsByTagName("p")[0].innerHTML = 'guncellenen paragraf'
+        // document.getElementsByTagName("p")[0].style.color = 'blue'
+
+        //eger hamsina eyni emeliyyat yerine yetirmek istesek
+        var x = document.getElementsByTagName("p") //x butun p-leri ozunde saxlamis oldu ve bir array oldu
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = "blue" //burdaki butun p elementlerinin yazi rengini deyisir
+        }
+    </script>
+
+</body>
+
+</html>
