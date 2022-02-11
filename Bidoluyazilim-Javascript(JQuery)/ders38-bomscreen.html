@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="div1"></div>
+    <script>
+        // var a = window.screen.width //cavab olaraq 1366 cixir
+        // var a = screen.width  //bele de yazmaq olar
+
+
+
+        //  var a = window.screen.height //cavab olaraq 768 cixir
+        //var a = screen.height //bele de yazmaq olar
+
+
+
+        // var a = window.screen.availWidth //1366
+
+
+        //var a = window.screen.availHeight //738
+
+
+        /*  20 ve 28ci setirdeki kodlardan ona gore
+ ferqli cavab alindiki : availHeight - ag olan hissedi
+
+height - ekranin hundurluyudu (operanin yuxari hissesini de sayir)
+  */
+
+
+        //   var a = window.screen.colorDepth  //reng derinliyi
+
+        var a = window.screen.pixelDepth //pixel derinliyi
+
+
+
+        document.getElementById("div1").innerHTML = a
+    </script>
+</body>
+
+</html>

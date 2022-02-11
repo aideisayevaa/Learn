@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //BOM - browser object model
+        //js ile browser arasindaki baglantidi
+
+
+        window.alert("xosgeldiniz, \n Aida") //burdaki \n ile asagidaki setire kecmek olur
+
+        window.prompt("Yasinizi girin: ", 15) //15i yazmasaq da olar sasdece olaraq default deyerdi
+
+        var x = window.confirm("Cerezleri kabul ediyormusunuz? ") //iki variant cixarir qarsimiza 
+            //tamama basanda x-e true deyer iptala basanda false deyer menimsedir
+
+
+        if (x) {
+            document.write("Onaylandi")
+        } else {
+            document.write("redd edildi")
+        }
+    </script>
+</body>
+
+</html>

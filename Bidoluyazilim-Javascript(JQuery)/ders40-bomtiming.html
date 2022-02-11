@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+
+
+    <script>
+        //setintervel icine yazdigimiz funksiyanin mueyyen zamanlarda islemesi ucundu
+        /*    setInterval(function() {
+                document.write("Javascript")
+            }, 2000) //millisaniyede   1saniye = 1000 mlsaniye
+ */
+
+        /*      setInterval(function() {
+                document.getElementById("div1").innerHTML = "JS"
+            }, 2000) //burada her iki saniyeden bir js yazir amma artmir cunki her defe  document.getElementById("div1") buna menimsedir += yazmaliyiq
+ */
+
+        var a = setInterval(function() { //deyisene menimsetmesek de olar clearIntervala gore deyisene menimsetdim
+                deyis()
+                document.getElementById("div1").innerHTML += "JS"
+                document.getElementById("div1").style.backgroundColor = randomColor
+
+
+            }, 1000) //burada her iki saniyeden bir js yazir amma artmir cunki her defe  document.getElementById("div1") buna menimsedir += yazmaliyiq
+
+        var randomColor;
+
+        function deyis() {
+            var x = ['blue', 'red', 'pink', 'purple']
+
+            var random = Math.round(Math.random() * 3)
+
+            randomColor = x[random]
+        }
+
+        clearInterval(a) //intervali dayandirir
+
+
+
+
+
+
+
+
+
+        /* setTimeout setInterval-dan ferqi odurki yazilan saniye qeder gozleyir ve yalniz bir defe icra olunur */
+
+        var b = setTimeout(function() {
+            document.getElementById("div2").innerHTML += "settimeout"
+        }, 1000)
+
+        clearTimeout(b)
+
+
+        // settimeout ve setintervalin daxilindeki funksiyani kenarda yazib sonradan bu ikisi daxilinde sadece adlarini da yaza bilerik
+    </script>
+</body>
+
+</html>

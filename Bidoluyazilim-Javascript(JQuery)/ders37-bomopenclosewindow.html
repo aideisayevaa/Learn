@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--   <button onclick="pencereKapa()" id="btn">Tikla</button>
+
+    
+    <script>
+        function pencereAc() {
+            //yeni bir browser penceresi acmaq ucun istifade edirik, ve ya yonlendirme zamani da istifade ede bilerik
+            // window.open("https://www.google.com", "_blank", "width:300,height:300")//"width:300,height:300" yazanda acilan pencerenin olculerini bildirmis oluruq
+
+            window.open("ders22-for.html", "_blank", "width:300,height:300") //"width:300,height:300" yazanda acilan pencerenin olculerini bildirmis oluruq
+
+
+        }
+
+
+        function pencereKapa() {
+            window.close()
+
+
+window.print() //sehifenin capini verir
+        }
+    </script> -->
+
+
+
+
+
+
+
+
+
+    <button onclick="pencereAc()" id="btn1">Pencere ac</button>
+    <button onclick="pencereTasi()" id="btn2">Pencere tasi</button>
+
+
+    <script>
+        //deyiseni burada yaradiriq ki funksiya daxilinde problem yaratmasin
+        var yeniPencere;
+
+        function pencereAc() {
+            //yeni pencere acilir 
+            yeniPencere = window.open("", "_blank", "width=100 , height=100")
+
+        }
+
+        //moveTo - acilan pencereni surusdurur
+        //focus - acilan pencerenin operanin uzerinde qalmasi ucundu
+        function pencereTasi() {
+            yeniPencere.moveTo(400, 400) //moveTo evezine moveBy -de yazmaq olar
+
+            yeniPencere.resizeTo(500, 500) //53cu setirdeki width ve height deyerlerini deyismek ucun isledilir
+                //   yeniPencere.resizeBy(500, 500) //resizeTo-dan ferqli olaraq bu deyerleri yeni 500;500-u 53cu setirdeki width ve height deyerleri ile toplayir
+            yeniPencere.focus()
+        }
+    </script>
+</body>
+
+</html>
