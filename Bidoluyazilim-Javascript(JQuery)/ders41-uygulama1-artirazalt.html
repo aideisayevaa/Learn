@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #artma {
+            background-color: green;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        #azalma {
+            background-color: red;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="text" value="0">
+    <button onclick="artma()" id="artma">+</button>
+    <button onclick="azalma()" id="azalma">-</button>
+
+    <script>
+        var text = document.getElementById("text")
+        var artmaBtn = document.getElementById("artma")
+        var azalmaBtn = document.getElementById("azalma")
+
+        function artma() {
+            var a = text.value //string olaraq gelir
+            a = Number(a)
+            a += 1
+            text.value = a
+        }
+
+        function azalma() {
+            var a = text.value //string olaraq gelir
+            a = Number(a)
+            a -= 1
+            text.value = a
+        }
+    </script>
+</body>
+
+</html>

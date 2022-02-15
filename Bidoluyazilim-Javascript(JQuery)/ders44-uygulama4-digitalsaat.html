@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+        
+        #div1 {
+            width: 40%;
+            height: auto;
+            position: relative;
+            left: 450px;
+            top: 150px;
+        }
+        
+        #saat {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            float: left;
+            margin-left: 4px;
+            text-align: center;
+            font-size: 128px;
+        }
+        
+        #deqiqe {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            float: left;
+            margin-left: 4px;
+            text-align: center;
+            font-size: 128px;
+        }
+        
+        #saniye {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            float: left;
+            margin-left: 4px;
+            text-align: center;
+            font-size: 128px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <div id="saat"></div>
+        <div id="deqiqe"></div>
+        <div id="saniye"></div>
+    </div>
+
+
+
+
+    <script>
+        var date = new Date()
+        var saat, deqiqe, saniye
+
+        saat = date.getHours()
+        deqiqe = date.getMinutes()
+        saniye = date.getSeconds()
+
+
+        setInterval(function() {
+            document.getElementById("saat").innerHTML = saat
+            document.getElementById("deqiqe").innerHTML = deqiqe
+            document.getElementById("saniye").innerHTML = saniye++
+
+
+
+                if (Number(document.getElementById("saniye").innerHTML) == 59) {
+                    deqiqe++
+                    saniye = 0
+                }
+
+
+            if (Number(document.getElementById("deqiqe").innerHTML) > 59) {
+                saat++
+                deqiqe = 0
+            }
+
+            if (Number(document.getElementById("saat").innerHTML) == 24) {
+                saat = 0
+                deqiqe = 0
+            }
+        }, 1000)
+    </script>
+
+
+
+</body>
+
+</html>

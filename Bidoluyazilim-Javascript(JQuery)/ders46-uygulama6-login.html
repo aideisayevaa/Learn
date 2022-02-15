@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        #div1 {
+            width: 30%;
+            height: 300px;
+            background-color: lightgray;
+            position: absolute;
+            border-radius: 10px;
+            left: 35%;
+            top: 25%;
+        }
+        
+        #kullaniciAdi {
+            width: 150px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        
+        #parola {
+            width: 150px;
+            height: 30px;
+            margin-top: 66px;
+            margin-left: 20px;
+        }
+        
+        #btn {
+            width: 250px;
+            height: 30px;
+            margin-top: 73px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <label style="margin-left: 60px;" for="kullaniciAdi">Kullanici Adi: </label>
+        <input type="text" id="kullaniciAdi">
+
+        <label style="margin-left: 60px;" for="parola">Parola: </label>
+        <input type="password" id="parola">
+
+
+        <button id="btn">Giris Yap</button>
+
+
+    </div>
+
+    <img src="img/photo1.jpg" id="img" width="1366" height="621">
+    <script>
+        var text;
+
+        function sekilSec() {
+            var a = ["img/photo1.jpg", "img/photo2.jpg", "img/photo3.jpg", "img/photo4.jpg", ]
+            text = ""
+
+            var random = Math.round(Math.random() * 4) //0 ve 4 arasi reqemleri verir
+            text = a[random]
+
+        }
+
+        setInterval(function() {
+            sekilSec()
+
+            document.getElementById("img").src = text
+        }, 2000);
+    </script>
+
+
+
+
+    <!-- 12:00 qaldim -->
+</body>
+
+</html>

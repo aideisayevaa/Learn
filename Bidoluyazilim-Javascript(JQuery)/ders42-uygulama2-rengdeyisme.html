@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="arxaFon">
+    <script>
+        //text-i funksiyadan xaricde yaradiriq ki basqa yerde de istifade edeceyik
+        var text;
+
+        function rengYarad() {
+            var a = "ABCDEF0123456789"
+            text = "#"
+
+            for (i = 0; i < 6; i++) {
+                var random = Math.round(Math.random() * 15) //0 ve 15 arasi reqemleri verir
+                text += a.charAt(random) //chartAt ile a stringinin hemin indexindeki simvolu goturur goturur
+
+            }
+        }
+
+        setInterval(function() {
+            rengYarad()
+
+            document.getElementById("arxaFon").style.backgroundColor = text
+        }, 2000);
+    </script>
+</body>
+
+</html>

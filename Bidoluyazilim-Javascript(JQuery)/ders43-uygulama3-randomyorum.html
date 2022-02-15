@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            width: 10%;
+            height: 150px;
+            position: relative;
+            left: 25%;
+            top: 100px;
+        }
+        
+        #div2 {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(226, 57, 57);
+            color: white;
+        }
+        
+        #div3 {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(177, 89, 89);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <div id="div2">kwjsj</div>
+        <div id="div3">,jwsjw</div>
+    </div>
+    <script>
+        var a = [{
+            yorum: "yorum1",
+            isim = "isim1"
+        }, {
+            yorum: "yorum2",
+            isim = "isim2"
+        }, {
+            yorum: "yorum3",
+            isim = "isim3"
+        }, {
+            yorum: "yorum4",
+            isim = "isim4"
+        }]
+
+        var random;
+
+        function sayYarat() {
+            random = Math.round(Math.random() * 3) //0 ve 4 arasi reqemleri verir
+
+        }
+
+        setInterval(function() {
+            sayYarat()
+
+            document.getElementById("div2").innerHTML = a[random].yorum
+            document.getElementById("div3").innerHTML = a[random].isim
+
+        }, 1000);
+    </script>
+
+
+
+    <!-- BU KOD ISLEMEDI -->
+</body>
+
+</html>

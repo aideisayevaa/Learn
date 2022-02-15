@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+        
+        #div1 {
+            width: 40%;
+            height: auto;
+            position: relative;
+            left: 450px;
+            top: 150px;
+        }
+        
+        #saat {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            float: left;
+            margin-left: 4px;
+            text-align: center;
+            font-size: 128px;
+        }
+        
+        #deqiqe {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            float: left;
+            margin-left: 4px;
+            text-align: center;
+            font-size: 128px;
+        }
+        
+        #saniye {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            float: left;
+            margin-left: 4px;
+            text-align: center;
+            font-size: 128px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <div class="test" id="saat"></div>
+        <div class="test" id="deqiqe"></div>
+        <div class="test" id="saniye"></div>
+    </div>
+
+
+
+
+    <script>
+        var saat = 0
+        var deqiqe = 0
+        var saniye = 5
+
+
+        var a = setInterval(function() {
+            document.getElementById("saat").innerHTML = saat
+            document.getElementById("deqiqe").innerHTML = deqiqe
+            document.getElementById("saniye").innerHTML = saniye--
+
+
+
+                if (Number(document.getElementById("saniye").innerHTML) == 0) {
+                    deqiqe--
+                    saniye = 59
+                }
+
+
+            if (Number(document.getElementById("deqiqe").innerHTML) == 0 &&
+                Number(document.getElementById("saniye").innerHTML) == 0) {
+                saat--
+                deqiqe = 59
+            }
+
+            if (Number(document.getElementById("saat").innerHTML) == 0 &&
+                Number(document.getElementById("deqiqe").innerHTML) == 0 &&
+                Number(document.getElementById("saniye").innerHTML) == 0) {
+
+                for (i = 0; i < 3; i++) {
+                    document.getElementsByClassName("test")[i].style.backgroundColor = 'red'
+                }
+                clearInterval(a)
+            }
+        }, 1000)
+    </script>
+
+
+
+</body>
+
+</html>

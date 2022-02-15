@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="img/photo1.jpg" id="img" width="1000" height="300">
+    <script>
+        //text-i funksiyadan xaricde yaradiriq ki basqa yerde de istifade edeceyik
+        var text;
+
+        function sekilSec() {
+            var a = ["img/photo1.jpg", "img/photo2.jpg", "img/photo3.jpg", "img/photo4.jpg", ]
+            text = ""
+
+            var random = Math.round(Math.random() * 4) //0 ve 4 arasi reqemleri verir
+            text = a[random]
+
+        }
+
+        setInterval(function() {
+            sekilSec()
+
+            document.getElementById("img").src = text
+        }, 2000);
+    </script>
+</body>
+
+</html>
