@@ -9,6 +9,7 @@
     <style>
         body {
             margin: 0;
+            background-color: aquamarine;
         }
         
         #div1 {
@@ -54,7 +55,7 @@
         <input type="password" id="parola">
 
 
-        <button id="btn">Giris Yap</button>
+        <button onclick="girisOnayi()" id="btn">Giris Yap</button>
 
 
     </div>
@@ -77,12 +78,56 @@
 
             document.getElementById("img").src = text
         }, 2000);
+
+
+
+        var kullanicilar = [{
+            kullaniciAdi: "admin1",
+            parola: "admin1"
+        }, {
+            kullaniciAdi: "admin2",
+            parola: "admin2"
+        }, {
+            kullaniciAdi: "admin3",
+            parola: "admin3"
+        }]
+
+
+        var girilenKullaniciAdi;
+        var girilenParola;
+        var x;
+
+        function kontrolEt() {
+            girilenKullaniciAdi = document.getElementById("kullaniciAdi").value;
+            girilenParola = document.getElementById("parola").value;
+
+
+            for (x of kullanicilar) {
+                if ((x.kullaniciAdi == girilenKullaniciAdi) && (x.parola == parola)) {
+                    return true
+                }
+            }
+        }
+
+
+
+        function girisOnayi() {
+            kontrolEt()
+
+            if (kontrolEt()) {
+                window.open("ders45-uygulama5-gerisayim.html", "_self")
+            } else {
+                alert("Yanlis")
+                document.getElementById("kullaniciAdi").value = " "
+                document.getElementById("parola").value = " "
+
+            }
+        }
     </script>
 
 
 
 
-    <!-- 12:00 qaldim -->
 </body>
 
 </html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: aquamarine;
+        }
+        
+        #div1 {
+            width: 30%;
+            height: 300px;
+            background-color: lightgray;
+            position: absolute;
+            border-radius: 10px;
+            left: 35%;
+            top: 25%;
+        }
+        
+        #vise1 {
+            width: 150px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        
+        #vise2 {
+            width: 150px;
+            height: 30px;
+            margin-top: 66px;
+            margin-left: 20px;
+        }
+        
+        #vise3 {
+            width: 150px;
+            height: 30px;
+            margin-top: 66px;
+            margin-left: 20px;
+        }
+        
+        #btn {
+            width: 250px;
+            height: 30px;
+            margin-top: 73px;
+            margin-left: 30px;
+        }
+        
+        #div2 {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            margin: auto;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <label style="margin-left: 60px;" for="kullaniciAdi"> Vize 1 </label>
+        <input type="text" id="vise1">
+
+        <label style="margin-left: 60px;" for="parola">Vize 2 </label>
+        <input type="text" id="vise2">
+
+        <label style="margin-left: 60px;" for="parola">Vize 3 </label>
+        <input type="text" id="vise3">
+
+
+        <div id="div2">
+
+        </div>
+
+        <button onclick="yazdir()" id="btn">Hesabla</button>
+
+
+    </div>
+
+    <script>
+        function hesabla() {
+            vize1 = document.getElementById("vise1").value
+            vize2 = document.getElementById("vise2").value
+            vize3 = document.getElementById("vise3").value
+
+            ortalama = (vize1 * 0.3) + (vize1 * 0.3) + (vize1 * 0.3)
+
+            return ortalama
+        }
+
+        function harfNotu() {
+            var ort = hesabla()
+            if (ort > 90) {
+                return "A"
+            } else if (ort > 80) {
+                return "B"
+            } else if (ort > 70) {
+                return "C"
+            } else if (ort > 60) {
+                return "D"
+            } else if (ort > 50) {
+                return "E"
+            } else {
+                return "F"
+            }
+        }
+
+        function yazdir() {
+            document.getElementById("div2").style.display = "block"
+            document.getElementById("div2").innerHTML = harfNotu()
+
+            if (harfNotu() == "E") {
+                document.getElementById("div2").style.backgroundColor = "red"
+            } else if (harfNotu() == "A") {
+                document.getElementById("div2").style.backgroundColor = "green"
+            }
+
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
