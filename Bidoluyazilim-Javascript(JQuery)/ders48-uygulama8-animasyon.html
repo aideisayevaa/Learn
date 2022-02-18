@@ -31,7 +31,7 @@
 
 
 
-            if (ustKonum >= (window.innerHeight - 150)) {
+            if (ustKonum >= (window.innerHeight - Number(box.style.height.split("px")[0]))) {
                 yukariDon = true
             } else if (ustKonum <= 0) {
                 yukariDon = false
@@ -41,7 +41,7 @@
 
 
 
-            if (solKonum >= (window.innerWidth - 150)) {
+            if (solKonum >= (window.innerWidth - Number(box.style.width.split("px")[0]))) {
                 solaDon = true
             } else if (solKonum <= 0) {
                 solaDon = false
