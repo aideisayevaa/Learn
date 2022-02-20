@@ -1,0 +1,10 @@
+compiler - Compiler (Derleyici), geliştiricilerin herhangi bir programlama dilini 
+kullanarak yazdığı kaynak kodu bilgisayarın anlayabileceği makine diline yani 
+0 ve 1’lere çeviren aracı yazılımdır.
+
+
+c++ ucun - codeblocks ve dev c++ -da isledilir, burada eclipse for c++ isledeceyik 
+, bu java se esasli oldugu ucun evvelce komda java oldugunu yoxlamaliyiq
+  - Javas 8 SE development kit ve ya runtime enviroment
+  -  eclipse for c++
+  - GCC compiler

@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    //Verilen tipleri
+    
+    /*
+    int - tam ededler
+    float  -kesr ededler
+    double  -kesr ededler
+    char   -1 simvol saxlayir
+    bool   -if else-de isledirik true false
+    */
+   /* 
+    int a = 32;
+    float b = 3.52;
+    double c = 4.546; //vergulden sonra daha cox reqemi ozunde saxlaya bilir
+    char d = 'A';
+    char d1 = 23;  //ascii - de 23 olani cixaracaq
+    bool e = true;  //truenin qiymeti 1, false-nin qiymeti 0 cixir
+    
+    cout << "a -nin qiymeti: " << a << endl;
+    cout << "b -nin qiymeti: " << b << endl;
+    cout << "c -nin qiymeti: " << c << endl;
+    cout << "d -nin qiymeti: " << d << endl;
+    cout << "d1 -nin qiymeti: " << d1 << endl;
+    cout << "e -nin qiymeti: " << e << endl;  */
+    
+    
+    int a,b,c,toplam = 0;
+    a = 4;
+    b = 3;
+    c = 5;
+    
+    toplam = a + b + c;
+    
+    cout << "Toplam: " << toplam <<endl;
+    
+    
+    
+    
+}
+
+
+
+//char d1 = 23; buna yeniden baxilmali

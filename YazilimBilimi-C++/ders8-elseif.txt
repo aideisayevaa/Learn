@@ -1,0 +1,59 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,b,x;
+   string islem;
+   
+   std::cout << "Kalkulyatora xos geldiniz..." << std::endl;
+   
+   std::cout << "1-ci emeliyyat: Toplama" << std::endl;
+   std::cout << "2-ci emeliyyat: Cixma" << std::endl;
+   std::cout << "3-cu emeliyyat: Vurma" << std::endl;
+   std::cout << "4-cu emeliyyat: Bolme" << std::endl;
+   
+   cout<<"Emeliyyat nomresi daxil edin: ";
+   cin>>x;
+   
+   if(x==1){
+       cout<< "a: ";
+       cin>>a;
+       cout<< "b: ";
+       cin>>b;
+       cout<<"Cemi: "<<a+b;
+   }
+   
+   else if(x==2){
+       cout<< "a: ";
+       cin>>a;
+       cout<< "b: ";
+       cin>>b;
+       cout<<"Ferqi: "<<a-b;
+   }
+   
+     else if(x==3){
+       cout<< "a: ";
+       cin>>a;
+       cout<< "b: ";
+       cin>>b;
+       cout<<"Hasili: "<<a*b;
+   }
+   
+     else if(x==4){
+       cout<< "a: ";
+       cin>>a;
+       cout<< "b: ";
+       cin>>b;
+       cout<<"Nisbeti: "<<a/b;
+   }
+   
+   else{
+       cout<<"emeliyyat nomresi yanlis daxil edilib";
+   }
+   
+    
+    return 0;
+}

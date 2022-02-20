@@ -1,0 +1,44 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    /*
+        or - || - en az bir teref dogru olanda TRUE
+        and - && - her iki teref dogru olanda TRUE
+        not - ! - false olani true-ye true olani false-ye kecirir
+    */
+    
+    string sys_username = "mustafa_murad";
+    string sys_password = "123456";
+    
+    string username;
+    string password;
+    
+    cout << "Istifadeci adinizi daxil edin:";
+    cin >> username;
+    
+    cout << "Parolunuzu daxil edin:";
+    cin >> password;
+    
+    
+    if(sys_username == username && sys_password == password){
+        cout << "Xosgeldiniz..." << endl;
+    }
+    
+    else if(sys_username != username && sys_password == password){
+        cout << "Istifadeci adinizi yeniden daxil edin" << endl;
+    }
+    
+     else if(sys_username == username && sys_password != password){
+        cout << "Parolunuzu yeniden daxil edin" << endl;
+    }
+    
+     else {
+        cout << "Istifadeci adinizi ve parolunuzu yeniden daxil edin" << endl;
+    }
+    
+    return 0;
+}

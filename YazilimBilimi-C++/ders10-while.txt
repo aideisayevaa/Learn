@@ -1,0 +1,26 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   /* int i = 0;
+    while(i<10){
+        std::cout << i << std::endl;
+        i += 2;
+    } */
+    
+    
+    
+    int i = 0;
+    int j = 0;
+    while(i<10 && j<5){ 
+        std::cout << "i : " << i << "   |   j : " << j << std::endl;
+        i++;
+        j++;
+    }
+    
+    
+    return 0;
+}

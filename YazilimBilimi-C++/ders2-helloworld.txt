@@ -1,0 +1,36 @@
+// c++ fayllarinin sonlugu cpp -dir
+#include <iostream>  /*bunu yazaraq bildiririk
+ki cout-u islede bilerik */
+
+/*  #include <iostream> - include daxildir demekdi ve 
+o demekdiki bu proqram iostream kitabxanasindan istifade edir*/
+
+
+using namespace std; //funksiyalari islede bilmeyimiz ucun
+/* namespace std icerisindeki funksiyalardan istifade etmek isteyirik 
+menasinda olur*/
+
+//isledile bilen butun c++ projectlerinde bu int funksiyasi olmalidi
+//butun emeliyyatlar bu funksiya daxilinde olur
+int main(){
+    
+    //deyerleri ekrana cout ile yazdiririq
+    cout << "Hello World" << endl;
+    cout << "Hello World 2"; //iki dene cout yazanda yan yana dusur
+  
+  
+    
+    /*alt setire kecmek ucun 2 usul var: 
+    
+      1)  cout << "Hello World\n";
+          cout << "Hello World 2";    
+          
+      2)  cout << "Hello World" << endl;
+          cout << "Hello World 2";    */
+          
+          
+    //sonuna endl yazanda yeni setire kec demek olur
+    
+    
+    return 0; //bunu her defe yazmaliyiq ki main metodumuz sonlandirilsin
+}

@@ -1,0 +1,47 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    /*
+    Riyazi operatorlar
+        + - * /
+    */
+    
+    int eded1=10;
+    int eded2=4;
+    
+    std::cout << "Eded1 + eded2 : " << eded1 + eded2<< std::endl;
+     std::cout << "Eded1 - eded2 : " << eded1 - eded2<< std::endl;
+     std::cout << "Eded1 * eded2 : " << eded1 * eded2<< std::endl;
+ std::cout << "Eded1 / eded2 : " << eded1 / eded2<< std::endl;
+ 
+ 
+ //burada axrincida int cixir cunki inti inte boluruk
+ 
+ 
+ std::cout << "Eded1 / eded2 : " << float(eded1) / eded2<< std::endl;
+ //eger tereflerden birini floata kecirsek onda cavab 2.5 cixir,
+ //diger terefi de kecire bilerik yene cavab 2.5 olacaq
+ 
+ 
+ 
+ std::cout << "--------------------------------" << std::endl;
+ 
+ 
+ int a=5;
+ 
+ std::cout << "a-nin evvelki deyeri: " << a << std::endl;
+ 
+ 
+ a = a + 2;   //a *= 2 de yaza bilerik
+ std::cout << "a-nin sonraki deyeri: " << a << std::endl;
+ 
+ 
+ a++;
+ std::cout << "a-nin axrinci deyeri: " << a << std::endl;
+ 
+    return 0;
+}

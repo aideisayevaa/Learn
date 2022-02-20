@@ -1,0 +1,20 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string str1 = "Bu bir stringdi ";
+    string str2 = "Bu da bir stringdi ";
+    
+    // stringleri toplaya bilirik
+    string str3 = str1 + str2;
+    
+    
+    std::cout << "Str1 : " << str1 << std::endl;
+    std::cout << "Str2 : " << str2 << std::endl;
+    std::cout << "Str3 : " << str3 << std::endl;
+    
+    return 0;
+}

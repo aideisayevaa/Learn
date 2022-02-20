@@ -1,0 +1,46 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x;    
+    
+    /*  cout ve cin         */
+   cout << "Bir eded daxil edin: ";
+    cin >> x;
+     cout << "Daxil edilen eded : " << x <<endl;
+     
+     
+       cout << "-----------------------------------------" << endl;
+   
+   int a,b,c,cem=0;
+    cout << "a ededini daxil edin: ";
+    cin >> a;
+    
+     cout << "b ededini daxil edin: ";
+    cin >> b;
+    
+     cout << "c ededini daxil edin: ";
+    cin >> c;
+    
+    cem = a + b + c;
+    
+     cout << "Cem : " << cem << endl;
+   
+   
+   
+   
+   /*  Daxil edilen deyerleri yanyana bosluqlarla daxil etmek */
+   int l,m,n;
+   
+   cout << "Deyerleri daxil edin : ";
+   
+   cin >> l >> m >> n;
+   
+   cout << "Uc ededin hasili : " << l*m*n;
+   
+   
+    return 0;
+}
