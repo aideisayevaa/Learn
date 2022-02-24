@@ -1,0 +1,27 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //do while while-den ferqi en az bir defe icra etmesidi
+    
+    string parol ="123456";
+    string input;
+    
+    do{
+        std::cout << "Parolunuzu daxil edin: " ;
+        cin >> input;
+        
+        if(input != parol){
+             std::cout << "Yanlis parol " << std::endl ;
+        }
+        
+        
+    }while(input != parol);
+
+ std::cout << "Duzgun parol" ;
+
+    return 0;
+}

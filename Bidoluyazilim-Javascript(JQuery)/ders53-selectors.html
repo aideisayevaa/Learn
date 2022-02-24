@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <style>
+        table {
+            border: 1px solid black;
+        }
+        
+        tr {
+            text-align: center;
+        }
+        
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div>
+        <p id="p1" class="c1">Paragraf 1, id: p1, class: c1</p>
+        <p id="p2" class="c1">Paragraf 2, id: p2, class: c1</p>
+        <p id="p3" class="c3">Paragraf 3, id: p3, class: c3</p>
+        <p id="p4" class="c4">Paragraf 4, id: p4, class: c4</p>
+    </div>
+
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Ad / Soyad</th>
+                <th>Yas</th>
+                <th>Meslek</th>
+            </tr>
+            <tr>
+                <th>Doruk Akgul</th>
+                <th>24</th>
+                <th>Endustri Muhendisi</th>
+            </tr>
+            <tr>
+                <th>Kilic Kalendar</th>
+                <th>26</th>
+                <th>Kaptan</th>
+            </tr>
+            <tr>
+                <th>Irem Simsek</th>
+                <th>22</th>
+                <th>Cevirmen</th>
+            </tr>
+            <tr>
+                <th>Baris Akgul</th>
+                <th>25</th>
+                <th>Muhendis</th>
+            </tr>
+        </thead>
+
+
+    </table>
+
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>JQUERY</li>
+    </ul>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>JQUERY</li>
+    </ul>
+
+    <a href="ders51-syntax.html" target="_blank">Ders 51</a> Checkbox: <input id="Checkbox1" type="checkbox" checked>
+    <br><br>
+
+    <button id="btn">id-nin secilmesi</button>
+    <button id="btn2">hamsinin secilmesi</button>
+    <button id="btn3">p teginin daxilindeki c1 classinin secilmesi</button>
+    <button id="btn4">id-si p1 classi c1 olanin secilmesi</button>
+    <button id="btn5">p teginin ilkinin secilmesi</button>
+    <button id="btn6">p teginin sonuncusunun secilmesi</button>
+    <button id="btn7">ul secilmesi</button>
+    <button id="btn8">ul-nin ilk li-nin secilmesi</button>
+    <button id="btn9">butun ul-lerin ilk li-leri</button>
+    <button id="btn10">attribute</button>
+    <button id="btn11">id-ye sahib olan hamisi</button>
+    <button id="btn12">a daxilindeki targeti blank olan</button>
+    <button id="btn13">butun butonlar</button>
+    <button id="btn14">checkbox</button>
+    <button id="btn15">secilmis sozu olanlar</button>
+    <button id="btn16">secilmis sozu olmayanlar</button>
+    <button id="btn17">secilmis sozu olmayanlar arasinda secilmis soz olanlar</button>
+    <button id="btn18">icerisinda p olanlar</button>
+    <button id="btn19">birden cox secim</button>
+    <button id="btn20">cedveldeki cut yerde duran setirler</button>
+    <button id="btn21">cedveldeki tek yerde duran setirler</button>
+
+
+
+
+
+
+    <script>
+        $(function() {
+
+            //id-nin secilmesi: 
+            $("#btn").click(function() {
+                //butona kliklenende p-ler qirmizi reng olur
+
+                $("p").css("color", "red")
+
+                //this $("#btn") daxilinde oldugu ucun btn nezerde tutulur
+                //ikinci defe de yazmaq olar tekrarlanmanin qarsisi alinmasi ucun bele yazilir
+                $(this).css("color", "yellow")
+
+            })
+
+
+            //hamsinin secilmesi
+            $("#btn2").click(function() {
+
+                $("*").css("color", "red")
+
+            })
+
+
+
+            //p teginin daxilindeki c1 classinin secilmesi
+            $("#btn3").click(function() {
+
+                $("p.c1").css("color", "purple")
+
+            })
+
+
+            //id-si p1 classi c1 olanin secilmesi
+            $("#btn4").click(function() {
+
+                $("#p1.c1").css("color", "green")
+
+            })
+
+
+            //p teglerinden ilkinin secilmesi
+            $("#btn5").click(function() {
+
+                $("p:first").css("color", "green")
+
+            })
+
+
+            //p teglerinden sonuncunun secilmesi
+            $("#btn6").click(function() {
+
+                $("p:last").css("color", "green")
+
+            })
+
+
+            //ul secilmesi
+            $("#btn7").click(function() {
+
+                $("ul").css("color", "green")
+
+            })
+
+
+            //ul-nin ilk li-nin secilmesi, 2ul varsa ilkinin ilk lisini secir
+            $("#btn8").click(function() {
+
+                $("ul li:first").css("color", "green")
+                $("ul li:last").css("color", "green")
+
+            })
+
+
+
+            //butun ul-lerin ilk li-leri
+            $("#btn9").click(function() {
+
+                $("ul li:first-child").css("color", "green")
+                    // $("ul li:last-child").css("color", "green")
+
+            })
+
+
+
+            //attribute-lerinhamsini "[]" daxilinde yazmaq olar 
+            $("#btn10").click(function() {
+
+                $("[href]").css("color", "red")
+
+            })
+
+
+            //id olan hamisi (id attribute oldugu ucun eyni qaydada olur)
+            $("#btn11").click(function() {
+
+                $("[id]").css("color", "red")
+
+            })
+
+
+            //a daxilindeki target attributunun secilmesi
+            $("#btn12").click(function() {
+
+                $("a[target = '_blank']").css("color", "red")
+
+            })
+
+
+            //butun buttonlarin secilmesi
+            $("#btn13").click(function() {
+
+                $(":button").css("color", "red")
+
+            })
+
+
+            //checkbox secilmesi
+            $("#btn14").click(function() {
+
+                $(":checked").css("width", "100px")
+
+            })
+
+
+            //icerisinde secilmis soz olanlar
+            $("#btn15").click(function() {
+
+                $("p:contains(1)").css("color", "blue")
+
+            })
+
+
+            //icerisinde secilmis soz olmayanlar
+            $("#btn16").click(function() {
+
+                $("p:not(#p1)").css("color", "blue")
+
+            })
+
+
+            //icerisinde secilmis soz olmayanlar
+            $("#btn17").click(function() {
+
+                $("p:not(':contains(1)')").css("color", "blue")
+
+            })
+
+
+
+            //icerisinde secilmis attribut olanlar
+            $("#btn18").click(function() {
+
+                $("div:has(p)").css("color", "blue")
+
+            })
+
+
+            //1den cox elemente classa ve ya tag-e eyni anda eyni emr vermek
+            $("#btn19").click(function() {
+
+                $(".c1,#p4,ul").css("color", "blue")
+
+            })
+
+
+            //cedveldeki cut yerde duran setirleri secmek
+            $("#btn20").click(function() {
+
+                $("tr:even").css("color", "blue")
+
+            })
+
+
+            //cedveldeki tek yerde duran setirleri secmek
+            $("#btn21").click(function() {
+
+                $("tr:odd").css("color", "blue")
+
+            })
+
+
+
+        })
+    </script>
+
+
+</body>
+
+</html>

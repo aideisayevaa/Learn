@@ -1,0 +1,55 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    /*
+    Break - dovru dayandirir
+    Contunie - yazilanda contunienin asagisindaki kodlari oxumur
+    */
+    
+    int i = 0;
+    while (i < 20){
+        
+        if(i == 5){
+            break;
+        }
+        std::cout << "i: " << i << std::endl;
+        i++;
+    }
+    
+    
+    std::cout << "-------------------" << std::endl;
+    
+   for (int i; i <20 ; i++) {
+       
+       if(i == 4 || i == 7){
+           continue;
+       }
+       
+       cout << "i : " << i << endl;
+   }
+   
+   
+   std::cout << "-------------------" << endl;
+   
+   
+   
+  //continue-den istifade zamani while yazanda artmani contunie-den evvel yazmaliyiq
+    int j = 0;
+    while (j < 20){
+        
+        if(j == 5){
+             j++;
+            continue;
+        }
+        std::cout << "j: " << j << std::endl;
+        j++;
+    }
+    
+    
+    return 0;
+}
