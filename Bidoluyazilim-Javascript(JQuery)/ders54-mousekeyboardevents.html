@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <style>
+        #div1 {
+            width: 100%;
+            height: 400px;
+            background-color: yellow;
+        }
+        
+        #div2 {
+            width: 30%;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <div id="div2">
+
+        </div>
+    </div>
+
+    <br>
+
+    <input type="text" id="txt">
+
+    <br><br>
+
+    <button id="btn">Click</button>
+    <button id="btn2">Double Click</button>
+
+
+
+    <script>
+        $(function() {
+
+            $("#btn").click(function() { //bir defe klikleyende isleyir
+                $("#div1").css("background-color", "red")
+            })
+
+            $("#btn2").dbclick(function() { //iki defe klikleyende isleyir
+                $("#div1").css("background-color", "red")
+            })
+
+
+            $("#div1").mouseenter(function() { //div1 id-li eraziye daxil olanda div-in 
+                //arxa rengi deyisir hemin divden cixanda evvelki veziyyete qayitmir
+                $("#div1").css("background-color", "red")
+            })
+
+
+            $("#div1").mouseleave(function() { //div1 id-li eraziden cixanda div-in 
+                //arxa rengi deyisir
+                $("#div1").css("background-color", "yellow")
+            })
+
+
+            $("#div1").mouseover(function() { //div1 id-li erazini uzerinde olanda div-in 
+                //arxa rengi deyisir
+                $("#div1").css("background-color", "red")
+            })
+
+
+            $("#div1").mouseout(function() { //div1 id-li erazinin uzerinden cixanda div-in 
+                //arxa rengi deyisir
+                $("#div1").css("background-color", "yellow")
+            })
+
+
+            $("#div1").hover(function() { //div1 id-li eraziye daxil olanda div-in 
+                //arxa rengi deyisir hemin divden cixanda evvelki veziyyete qayidir
+                $("#div1").css("background-color", "red")
+            })
+
+
+            $("#div1").mouseup(function() { //div1 id-li erazinin uzerine sag klik vurduqdan sonra bu funksiya isleyir
+                $("#div1").css("background-color", "blue")
+            })
+
+
+            $("#div1").mousedown(function() { //div1 id-li erazinin uzerinde sag klik vurub saxlayanda
+                $("#div1").css("background-color", "black")
+            })
+
+
+            $("#txt").keypress(function() { //txt id-li inputa nese yazanda div1-in arxa fou deyisir
+                $("#div1").css("background-color", "black")
+            })
+
+
+            $("#txt").keyup(function() { //txt id-li inputa nese yazanda div1-in arxa fou deyisir
+                //burada klaviaturadan elimizi cekende icra edir
+                $("#div1").css("background-color", "black")
+            })
+
+
+            $("#txt").keydown(function() { //txt id-li inputa nese yazanda div1-in arxa fou deyisir
+                //burada klaviaturadan elimizi cekmeyi gozlemir ilk herf etibarile icra edir
+                $("#div1").css("background-color", "black")
+            })
+        })
+    </script>
+
+
+</body>
+
+</html>
