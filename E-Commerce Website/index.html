@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cool Shop</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Colo Shop Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font Awesome Cdn -->
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Owl Carousel File -->
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+</head>
+
+<body>
+
+    <div class="super_container">
+
+
+        <!-- Header -->
+
+        <header class="header trans_300">
+            <!-- main navigation -->
+            <div class="main_nav_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-right">
+                            <div class="logo_container">
+                                <a href="#">Cool <span>Shop</span></a>
+                            </div>
+                            <nav class="navbar">
+                                <ul class="navbar_menu">
+                                    <li><a href="#">home</a></li>
+                                    <li><a href="#">shop</a></li>
+                                    <li><a href="#">promotion</a></li>
+                                    <li><a href="#">pages</a></li>
+                                    <li><a href="#">blog</a></li>
+                                    <li><a href="#">contacts</a></li>
+                                </ul>
+                                <div class="navbar_user">
+                                    <li><a href="#"><i class="fa fa-search" arial-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-user" arial-hidden="true"></i></a></li>
+                                    <li class="checkout">
+                                        <a href="#">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span id="checkout_items" class="checkout_items">2</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </header>
+
+
+        <!-- Slider -->
+
+        <div class="main_slider" style="background-image: url(images/slider_1.jpg);">
+            <div class="container fill_hight">
+                <div class="row align-items-center fill_hight">
+                    <div class="col">
+                        <div class="main_slider_content">
+                            <h6>Spring / Summer Collection 2021</h6>
+                            <h1>Get up to 30% Off New Arrivals</h1>
+                            <div class="red_button shop_now_button"><a href="#">Shop now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Banner -->
+
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image: url(images/banner_1.jpg);">
+                            <div class="banner_category">
+                                <a href="#">Women's</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image: url(images/banner_2.jpg);">
+                            <div class="banner_category">
+                                <a href="#">Accessories</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image: url(images/banner_3.jpg);">
+                            <div class="banner_category">
+                                <a href="#">men's</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- New Arrivals -->
+
+
+        <div class="new_arrivals">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="section-title new_arrivals_title">
+                            <h2>Mew Arrivals</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col text-center">
+                        <div class="new_arrivals_sorting">
+                            <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+                                <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked" data-filter="*">all</li>
+                                <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".women">women's</li>
+                                <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".accessories">accessories</li>
+                                <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".men">men's</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="product-grid" data-isotope="{'itemSelector': '.product-item','layoutMode':'fitRows'}">
+
+                            <!-- Product 1 -->
+                            <div class="product-item men">
+                                <div class="product discount product_filter">
+                                    <div class="product_image">
+                                        <img src="images/product_1.png" alt="">
+                                    </div>
+                                    <div class="favorite favorite_left"></div>
+                                    <!-- <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+                                        <p>-20$</p>
+                                    </div> -->
+                                    <div class="product_info">
+                                        <h6 class="product_name">
+                                            <a href="#">Men's Solid Slim Fit Casual Shirt</a>
+                                        </h6>
+                                        <div class="product_price">520$ <span>590$</span></div>
+                                    </div>
+                                </div>
+                                <div class="red_button add_to_cart_button">
+                                    <a href="#">add to cart</a>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Product 2 -->
+                            <div class="product-item women">
+                                <div class="product product_filter">
+                                    <div class="product_image">
+                                        <img src="images/product_2.png" alt="">
+                                    </div>
+                                    <div class="favorite"></div>
+                                    <!-- <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center">
+                                        <span>New</span>
+                                    </div> -->
+                                    <div class="product_info">
+                                        <h6 class="product_name">
+                                            <a href="#">Men's Solid Slim Fit Casual Shirt</a>
+                                        </h6>
+                                        <div class="product_price">610$</div>
+                                    </div>
+                                </div>
+                                <div class="red_button add_to_cart_button">
+                                    <a href="#">add to cart</a>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!-- Product 3 -->
+                            <div class="product-item women">
+                                <div class="product product_filter">
+                                    <div class="product_image">
+                                        <img src="images/product_3.png" alt="">
+                                    </div>
+                                    <div class="favorite"></div>
+
+                                    <div class="product_info">
+                                        <h6 class="product_name">
+                                            <a href="#">Men's Solid Slim Fit Casual Shirt</a>
+                                        </h6>
+                                        <div class="product_price">120$</div>
+                                    </div>
+                                </div>
+                                <div class="red_button add_to_cart_button">
+                                    <a href="#">add to cart</a>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!-- Product 4 -->
+                            <div class="product-item accessories">
+                                <div class="product product_filter">
+                                    <div class="product_image">
+                                        <img src="images/product_4.png" alt="">
+                                    </div>
+                                    <div class="favorite favorite_left"></div>
+                                    <!-- <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+                                        <span>Sale</span>
+                                    </div> -->
+                                    <div class="product_info">
+                                        <h6 class="product_name">
+                                            <a href="#">Men's Solid Slim Fit Casual Shirt</a>
+                                        </h6>
+                                        <div class="product_price">420$ </div>
+                                    </div>
+                                </div>
+                                <div class="red_button add_to_cart_button">
+                                    <a href="#">add to cart</a>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <!-- Product 5 -->
+                            <div class="product-item men women">
+                                <div class="product product_filter">
+                                    <div class="product_image">
+                                        <img src="images/product_5.png" alt="">
+                                    </div>
+                                    <div class="favorite "></div>
+                                    <div class="product_info">
+                                        <h6 class="product_name">
+                                            <a href="#">Men's Solid Slim Fit Casual Shirt</a>
+                                        </h6>
+                                        <div class="product_price">180$ </div>
+                                    </div>
+                                </div>
+                                <div class="red_button add_to_cart_button">
+                                    <a href="#">add to cart</a>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!-- Product 6 -->
+                            <div class="product-item accessories">
+                                <div class="product discount product_filter">
+                                    <div class="product_image">
+                                        <img src="images/product_6.png" alt="">
+                                    </div>
+                                    <div class="favorite favorite_left"></div>
+                                    <!-- <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+                                        <span>-20$</span>
+                                    </div> -->
+                                    <div class="product_info">
+                                        <h6 class="product_name">
+                                            <a href="#">Men's Solid Slim Fit Casual Shirt</a>
+                                        </h6>
+                                        <div class="product_price">520$ <span>590$</span></div>
+                                    </div>
+                                </div>
+                                <div class="red_button add_to_cart_button">
+                                    <a href="#">add to cart</a>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <!-- Product 7 -->
+                            <div class="product-item women">
+                                <div class="product product_filter">
+                                    <div class="product_image">
+                                        <img src="images/product_7.png" alt="">
+                                    </div>
+                                    <div class="favorite"></div>
+                                    <div class="product_info">
+                                        <h6 class="product_name">
+                                            <a href="#">Men's Solid Slim Fit Casual Shirt</a>
+                                        </h6>
+                                        <div class="product_price">610$</div>
+                                    </div>
+                                </div>
+                                <div class="red_button add_to_cart_button">
+                                    <a href="#">add to cart</a>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                            <!-- Product 8 -->
+                            <div class="product-item accessories">
+                                <div class="product product_filter">
+                                    <div class="product_image">
+                                        <img src="images/product_8.png" alt="">
+                                    </div>
+                                    <div class="favorite"></div>
+
+                                    <div class="product_info">
+                                        <h6 class="product_name">
+                                            <a href="#">Men's Solid Slim Fit Casual Shirt</a>
+                                        </h6>
+                                        <div class="product_price">120$</div>
+                                    </div>
+                                </div>
+                                <div class="red_button add_to_cart_button">
+                                    <a href="#">add to cart</a>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <!-- Product 9 -->
+                            <div class="product-item men">
+                                <div class="product  product_filter">
+                                    <div class="product_image">
+                                        <img src="images/product_9.png" alt="">
+                                    </div>
+                                    <div class="favorite favorite_left"></div>
+                                    <!-- <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+                                        <span>sale</span>
+                                    </div> -->
+                                    <div class="product_info">
+                                        <h6 class="product_name">
+                                            <a href="#">Men's Solid Slim Fit Casual Shirt</a>
+                                        </h6>
+                                        <div class="product_price">410$</div>
+                                    </div>
+                                </div>
+                                <div class="red_button add_to_cart_button">
+                                    <a href="#">add to cart</a>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!-- Product 10 -->
+                            <div class="product-item men">
+                                <div class="product  product_filter">
+                                    <div class="product_image">
+                                        <img src="images/product_10.png" alt="">
+                                    </div>
+                                    <div class="favorite favorite_left"></div>
+                                    <!-- <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+                                        <span>sale</span>
+                                    </div> -->
+                                    <div class="product_info">
+                                        <h6 class="product_name">
+                                            <a href="#">Men's Solid Slim Fit Casual Shirt</a>
+                                        </h6>
+                                        <div class="product_price">410$</div>
+                                    </div>
+                                </div>
+                                <div class="red_button add_to_cart_button">
+                                    <a href="#">add to cart</a>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Deal of the week -->
+
+
+
+        <!-- Benefit -->
+
+
+        <!-- Blogs -->
+
+
+        <!-- Newsletter -->
+
+
+        <!-- Footer -->
+
+
+    </div>
+
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+    <!-- jquery JS File -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Isotope JS File -->
+    <script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+    <!-- Owl Carousel JS File -->
+    <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <!-- Javascript File -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
