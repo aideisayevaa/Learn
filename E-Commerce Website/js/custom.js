@@ -67,9 +67,15 @@ jQuery(document).ready(function($) {
 
     function initTimer() {
         if ($('.timer').length) {
-            var date = new Date();
-            date.setDate(date.getDate() + 3);
-            var target_date = date.getTime();
+
+
+            var target_date = new Date("May 3,2021").getTime();
+
+
+
+            // var date = new Date();
+            // date.setDate(date.getDate() + 3);
+            // var target_date = date.getTime();
 
 
             var days, hours, minutes, seconds;
