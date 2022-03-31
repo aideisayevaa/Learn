@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     initFavorite();
     initIsotopeFiltering();
     initTimer();
-
+    initSlider();
 
 
     //favorite
@@ -106,6 +106,43 @@ jQuery(document).ready(function($) {
                 s.text(seconds)
 
             }, 1000)
+
+        }
+    }
+
+    //slider
+
+    function initSlider() {
+        if ($('.product_slider').length) {
+            var slider1 = $('.product_slider')
+
+            slider1.owlCarousel({
+                loop: false,
+                dots: false,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    480: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    991: {
+                        items: 4
+                    },
+                    1280: {
+                        items: 5
+                    },
+                    1440: {
+                        items: 5
+                    },
+
+                }
+            })
+
 
         }
     }
