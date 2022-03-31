@@ -142,9 +142,20 @@ jQuery(document).ready(function($) {
 
                 }
             })
+            if ($('.product_slider_nav_left').length) {
+                $('.product_slider_nav_left').on('click', function() {
+                    slider1.trigger('prev.owl.carousel')
+                })
+            }
+            if ($('.product_slider_nav_right').length) {
+                $('.product_slider_nav_right').on('click', function() {
+                    slider1.trigger('next.owl.carousel')
+                })
+            }
 
 
         }
+
     }
 
 })
