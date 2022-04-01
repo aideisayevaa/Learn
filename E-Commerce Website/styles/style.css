@@ -248,6 +248,38 @@ h6 {
 }
 
 
+/* Hamburger */
+
+.hamburger_container {
+    margin-left: 40px;
+}
+
+.hamburger_container i {
+    font-size: 24px;
+    color: #1e1e27;
+    transition: all 300ms ease;
+}
+
+.hamburger_container:hover i {
+    color: #b5aec4;
+}
+
+.hamburger_menu {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+.hamburger_menu {
+    right: 0;
+}
+
+
 /* 3.2 LOGO */
 
 .logo_container {
