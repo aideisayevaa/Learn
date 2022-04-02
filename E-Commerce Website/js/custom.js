@@ -8,10 +8,12 @@ jQuery(document).ready(function($) {
     var hamburgerClose = $('.hamburger_close');
     var fsOverlay = $('.fs_menu_overlay');
 
+    initMenu();
     initFavorite();
     initIsotopeFiltering();
     initTimer();
     initSlider();
+
 
 
     //favorite
