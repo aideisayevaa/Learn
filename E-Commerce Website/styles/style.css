@@ -1176,3 +1176,45 @@ h6 {
         font-size: 20px;
     }
 }
+
+@media only screen and (max-width: 991px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .main_slider_content {
+        margin-bottom: 23px;
+    }
+    .shop_now_button {
+        margin-top: 26px;
+    }
+    .grid_item {
+        width: 25%;
+    }
+    .navbar_menu {
+        display: none;
+    }
+    .hamburger_container {
+        display: block;
+    }
+    .main_slider_content {
+        width: 100%;
+        padding-right: 15px;
+    }
+    .banner_item {
+        height: 160px;
+    }
+    .banner_category {
+        min-width: 160px;
+    }
+    .banner_category a {
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .product-item {
+        width: 25%;
+    }
+    .deal_ofthe_week_col {}
+}
