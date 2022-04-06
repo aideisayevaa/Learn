@@ -1282,3 +1282,62 @@ h6 {
         margin-bottom: 65px;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    .main_slider_content h6 {
+        margin-bottom: 23px;
+    }
+    .shop_now_button {
+        margin-top: 20px;
+    }
+    .red_button a {
+        font-size: 12px;
+    }
+    .banner_item {
+        margin-bottom: 30px;
+        height: 210px;
+    }
+    .new_arrivals_title {
+        margin-top: 44px;
+    }
+    .product-item {
+        height: 345px;
+        width: 33.3333%;
+    }
+    .product {
+        height: 345px;
+    }
+    .grid_sorting_button {
+        font-size: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-width: 80px;
+    }
+    .product_slider_container {
+        height: auto;
+    }
+    .product_slider_item .product-item {
+        height: 380px;
+    }
+    .benefit_col {
+        margin-bottom: 15px;
+    }
+    .blog_item {
+        height: 372px;
+    }
+    .newsletter_form {
+        margin-bottom: 40px;
+    }
+    .newsletter_submit_btn {
+        margin-top: 15px;
+    }
+}
