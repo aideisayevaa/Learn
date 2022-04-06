@@ -1263,7 +1263,7 @@ h6 {
         height: 440px;
     }
     .blog-title {
-        height: 24px;
+        font-size: 24px;
     }
     .newsletter_text {
         height: auto;
@@ -1339,5 +1339,38 @@ h6 {
     }
     .newsletter_submit_btn {
         margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .hamburger_menu {
+        right: -100%;
+        width: 100%;
+    }
+    .product-item {
+        width: 50%;
+        height: 420px;
+    }
+    .product {
+        height: 420px;
+    }
+    .blog_item {
+        height: calc((100vw - 30px)/1.37);
+    }
+    .cr {
+        display: block;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        font-size: 13px;
+    }
+    .footer_nav {
+        margin-bottom: 20px;
+    }
+    .footer_nav li {
+        display: block;
+        margin-right: 0px;
+    }
+    .footer_nav li a {
+        font-size: 13px;
     }
 }
