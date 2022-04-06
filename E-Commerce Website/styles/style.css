@@ -4,7 +4,7 @@
 
 /* 1. Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 /* 2. Body and Some General Stuff */
 
@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 23px;
     font-weight: 400;
@@ -34,13 +34,13 @@ ul {
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 1.7;
     font-weight: 500;
     color: #989898;
     -webkit-font-smoothing: antialiased;
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 
 p a {
@@ -57,7 +57,7 @@ a:active,
 a:link {
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 
 p a:active {
@@ -115,7 +115,7 @@ h5,
 h6 {
     color: #282828;
     -webkit-font-smoothing: antialiased;
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 
 .trans_300 {
@@ -168,7 +168,7 @@ h6 {
 .main_nav_container {
     width: 100%;
     background: #fff;
-    box-shadow: 0 0 16px rgba(0, 0, 0, .015);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.015);
 }
 
 .navbar {
@@ -542,7 +542,7 @@ h6 {
     width: calc(100% + 1px);
     height: 100%;
     pointer-events: none;
-    content: '';
+    content: "";
     border: solid 2px rgba(235, 235, 235, 0);
     border-radius: 3px;
     transition: all 0.3s ease;
@@ -618,7 +618,7 @@ h6 {
 }
 
 .product_bubble_right::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 0;
@@ -630,7 +630,7 @@ h6 {
 }
 
 .product_bubble_left::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 0;
@@ -708,14 +708,14 @@ h6 {
 }
 
 .favorite.active::after {
-    font-family: 'FontAwesome';
-    content: '\f004';
+    font-family: "FontAwesome";
+    content: "\f004";
     color: #fe4c50;
 }
 
 .favorite::after {
-    font-family: 'FontAwesome';
-    content: '\f08a';
+    font-family: "FontAwesome";
+    content: "\f08a";
 }
 
 .favorite:hover::after {
@@ -761,7 +761,7 @@ h6 {
     width: 60px;
     height: 5px;
     background: #fe4c50;
-    content: '';
+    content: "";
 }
 
 .timer {
@@ -821,7 +821,7 @@ h6 {
     right: 0;
     height: 100%;
     background: #ffffff;
-    content: '';
+    content: "";
     z-index: 1;
 }
 
@@ -1142,4 +1142,37 @@ h6 {
 
 .footer_social ul li a:hover {
     color: #fe4c50;
+}
+
+
+/* ************ RESPONSIVE ********** */
+
+@media only screen and (max-width: 1199px) {
+    .main_slider {
+        min-height: 475px;
+        height: calc(100vw / 1.714);
+    }
+    .main_slider_content {
+        width: 80%;
+    }
+    .banner_item {
+        height: 220px;
+    }
+    .product-item {
+        height: 360px;
+    }
+    .product {
+        height: 320px;
+    }
+    .timer li {
+        width: 90px;
+        height: 90px;
+    }
+    .timer_num {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .blog_title {
+        font-size: 20px;
+    }
 }
