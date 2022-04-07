@@ -929,8 +929,8 @@
     
     .blog_content {
         position: absolute;
-        top: 30px;
-        left: 30px;
+        top: 50px;
+        left: 28px;
         width: calc(100%-60px);
         height: calc(100%-60px);
         background: rgba(255, 255, 255, 0.9);
@@ -940,12 +940,14 @@
         transform-origin: center center;
         transform: scale(0.7);
         transition: all 300ms ease;
+        width: 85%;
     }
     
     .blog_item:hover .blog_content {
         visibility: visible;
         opacity: 1;
         transform: scale(1);
+        padding: 20px;
     }
     
     .blog-title {
