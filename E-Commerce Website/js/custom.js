@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
         }
         if (hamburgerClose.length) {
             hamburgerClose.on('click', function() {
-                if (!menuActive) {
+                if (menuActive) {
                     closeMenu()
                 }
             })
@@ -44,7 +44,7 @@ jQuery(document).ready(function($) {
             for (i = 0; i < items.length; i++) {
                 if (items[i].classList.contains('has-children')) {
                     items[i].onclick = function() {
-                        this.classList.toggle("active")
+                        this.classList.toggle("hamburger_active")
                         var panel = this.children[1]
                         if (panel.style.maxHeight) {
                             panel.style.maxHeight = null
@@ -59,13 +59,13 @@ jQuery(document).ready(function($) {
     }
 
     function openMenu() {
-        menu.addClass('active')
+        menu.addClass('hamburger_active')
         fsOverlay.css('pointer-events', "auto")
         menuActive = true
     }
 
     function closeMenu() {
-        menu.removeClass('active')
+        menu.removeClass('hamburger_active')
         fsOverlay.css('pointer-events', "none")
         menuActive = false
     }

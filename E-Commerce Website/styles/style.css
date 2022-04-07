@@ -268,7 +268,7 @@
         transition: all 300ms ease;
     }
     
-    .hamburger_menu.active {
+    .hamburger_active {
         right: 0;
     }
     
