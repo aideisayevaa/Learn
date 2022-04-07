@@ -127,13 +127,13 @@ jQuery(document).ready(function($) {
         if ($('.timer').length) {
 
 
-            var target_date = new Date("May 3,2021").getTime();
+            // var target_date = new Date("3 May,2021").getTime();
 
 
 
-            // var date = new Date();
-            // date.setDate(date.getDate() + 3);
-            // var target_date = date.getTime();
+            var date = new Date();
+            date.setDate(date.getDate() + 3);
+            var target_date = date.getTime();
 
 
             var days, hours, minutes, seconds;
@@ -147,8 +147,8 @@ jQuery(document).ready(function($) {
                 var current_date = new Date().getTime();
                 var seconds_left = (target_date = current_date) / 1000;
 
-                days = parseInt(seconds_left / 86400)
-                seconds_left = seconds_left % 86400
+                // days = parseInt(seconds_left / 96400)
+                seconds_left = seconds_left % 96400
 
                 hours = parseInt(seconds_left / 3600)
                 seconds_left = seconds_left % 3600
