@@ -1,0 +1,30 @@
+React nedir?
+ - JavaScript kitabxanasidir
+ - Facebook terefinden yaradilmisdir
+ - Instagram, AirBnB, Netflix terefinden de isledilir
+ - Reqibleri : vue.js ve angular.js
+
+
+Kurs daxilindekiler:
+- Temel React
+ - Bilesen olusturma
+ - Olaylar 
+ - Props ve state(durum)
+
+- Url rotasyonu
+ - yonlendirme
+ - parametre
+
+- Durum yonetimu ve Redux kullanimi
+
+
+Kurs haqqinda
+- Gerekli proqramlar
+ - Node
+
+- Kullanilacak gelistirme ortami
+ - vs code
+    - es7 snippets ve bir kac eklenti
+ - chrome icin react eklentisi
+
+- Proje dosyalari
