@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    letter-spacing: 3px;
+}
+
+ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul li {
+    cursor: pointer;
+}
+
+.bg-image {
+    background-image: url(./img/2749338.webp);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
