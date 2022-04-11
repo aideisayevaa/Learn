@@ -1,0 +1,52 @@
+- eger eyni bir elementler varsa yeni icerisinde herhansi
+bir state deyismek lazim olmayacaqsa onlari funksiyalarla yaziriq
+
+- components papkasi daxilinde Navbar.js adli fayl yaradiriq:
+
+import React from "react";
+
+function Navbar(){
+    return(
+        <div>
+            <h3>User App</h3>
+        </div>
+    )
+}
+
+export default Navbar;
+
+
+app.js :
+
+
+import './App.css';
+import Navbar from './components/Navbar';
+
+function App() {
+  return (
+    <div>
+      <Navbar/>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+- arrow function ile de yaza bilerik:
+
+import React from "react";
+
+const Navbar = () => {
+    return(
+        <div>
+            <h3>User App</h3>
+        </div>
+    )
+}
+
+export default Navbar;
+
+
+-rfc + enter ile extentions vasitesile qisa formada yaza bilerik

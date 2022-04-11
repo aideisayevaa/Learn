@@ -14,7 +14,7 @@ function App() {
 export default App;
 
 
--.css fayllarinda da hemise oldugu kimi class adlariyla css elave etmek olar
+- .css fayllarinda da hemise oldugu kimi class adlariyla css elave etmek olar
 
 
 - bootstrap elave etmek ucun hemiseki qayda da linkleri

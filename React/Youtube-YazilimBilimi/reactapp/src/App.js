@@ -1,10 +1,11 @@
 
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div>
-     <h1 style={{color:"blue",fontSize:"50px"}}>ADD COMPONENT</h1>
+      <Navbar/>
     </div>
   );
 }
