@@ -1,0 +1,49 @@
+- src daxilinde components adli papka yaratdiq ve user.js
+adli fayl elave etdik
+
+- yuklediyimiz react extentionunda qisa yollar var eger biz rcc yazib tab
+etsek hazir formada gelir sadece olaraq exportu axira yaziriq
+
+- user.js-e : (burada User classi yaranir)
+import React, { Component } from 'react'
+
+
+class User extends Component {
+  render() {
+    return (
+      <div>
+          <form>
+              <input type="text" />
+              <button>Gonder</button>
+          </form>
+      </div>
+    )
+  }
+}
+
+
+
+export default User; (yazdigimiz User classini diger sehifelerde de gore 
+bilmek ucun export edirik)
+
+
+
+- app.js:
+
+import './App.css';
+import User from './components/User' (User klasini import edirikki burda istifade ede bilek)
+
+function App() {
+  return (
+    <div className='App'> (bir dene parent class olur)
+     <h1>ADD COMPONENT</h1>
+      <User/> (User clasinin cagirilma formasi)
+    </div>
+  );
+}
+
+export default App;
+
+
+- console baxsaq gorerikki App daxiline User gelib
+- bir componentden defelerle istifade etmek olar
