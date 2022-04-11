@@ -1,0 +1,121 @@
+---------app.js: 
+
+import './App.css';
+import Navbar from './components/Navbar';
+import User from './components/User';
+
+function App() {
+  return (
+    <div>
+      <Navbar title="User App 2"/> (title evezine istediyimiz birsey olabiler)
+      <hr />
+      <User/>
+    </div>
+  );
+}
+
+export default App;
+
+
+----------navbar.js:
+
+import React from "react";
+
+function Navbar(props) {
+    return(
+        <div>
+            <h3>{props.title}</h3> (deyisiklik etmek isteyende bura sabit qalir yuxaridaki deyisir)
+        </div>
+    )
+}
+
+export default Navbar;
+
+
+
+-------------------------------------------------------------------------------
+
+
+<User
+      name="Aida"
+      surname="Isayeva"
+      age="19"
+/>
+
+
+import React, { Component } from 'react'
+
+
+class User extends Component {
+  render() {
+    return (
+      <div>
+          <ul>
+              <li>Ad : {this.props.name}</li>
+              <li>Soyad : {this.props.surname}</li>
+              <li>Yas : {this.props.age}</li>
+          </ul>
+      </div>
+    )
+  }
+}
+
+
+
+export default User;
+
+
+
+
+
+- consolede baxanda goruruki ki propslar sag terefde gorunur
+
+
+
+- indi kopyalayib kodlari tekrar yazmaga ehtiyac qalmir 
+sadece olaraq melumatlari deyisirik
+
+<User
+      name="sdsad"
+      surname="adsas"
+      age="asds"
+/>
+
+<User
+      name="hjhgm"
+      surname="Ifgh"
+      age="ghhgf"
+/>
+
+
+
+
+
+---------------------------------------------
+
+this.props.name bu formada uzun yazmaq istemirikse asagidakikimi yaza bilerik
+
+import React, { Component } from 'react'
+
+
+class User extends Component {
+  render() {
+
+    //destructing
+
+    const {name,surname,age} = this.props;
+    return (
+      <div>
+          <ul>
+              <li>Ad : {name}</li>
+              <li>Soyad : {surname}</li>
+              <li>Yas : {age}</li>
+          </ul>
+      </div>
+    )
+  }
+}
+
+
+
+export default User;

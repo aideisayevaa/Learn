@@ -3,12 +3,17 @@ import React, { Component } from 'react'
 
 class User extends Component {
   render() {
+
+    //destructing
+
+    const {name,surname,age} = this.props;
     return (
       <div>
-          <form>
-              <input type="text" />
-              <button>Gonder</button>
-          </form>
+          <ul>
+              <li>Ad : {name}</li>
+              <li>Soyad : {surname}</li>
+              <li>Yas : {age}</li>
+          </ul>
       </div>
     )
   }
