@@ -1,0 +1,171 @@
+ ----------- Navbar.js
+
+import React from "react";
+import PropTypes from "prop-types";
+
+function Navbar(props) {
+    return(
+        <div>
+            <h3>{props.title}</h3>
+        </div>
+    )
+}
+
+Navbar.propTypes={
+    title : PropTypes.string.isRequired
+}
+
+export default Navbar;
+
+
+---------- App.js
+
+
+import './App.css';
+import Navbar from './components/Navbar';
+import User from './components/User';
+
+function App() {
+  return (
+    <div>
+      <Navbar/>
+      <hr />
+      <User
+      name="Aida"
+      surname="Isayeva"
+      age="19"
+      />
+    </div>
+  );
+}
+
+export default App;
+
+
+-- eger biz navbar.jsde proptypes yazmisiqsa orada hansi deyiseni
+qeyd etmisikse(title) ve tipini qeyd etmisikse  app.js de <Navbar /> yazanda 
+bu formada bos saxlasaq error verir sebebi ise odur ki, 
+title : PropTypes.string.isRequired bu kod vasitesile onu bildiririkki 
+title olmali ve onun deyeri string olmalidir
+
+
+
+- eger deyer daxil etmesek error cixmasin deye ozuuzden default deyer 
+vere bilerik: 
+
+Navbar.defaultProps={
+    title : "Default"
+}
+
+
+
+-- impt + enter ile qisa sekilde yazmaq olar
+
+-- yuxarida yazdiqlarimizi hemcinin classlara da tetbiq ede bilerik
+
+
+----- user.js
+
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
+
+class User extends Component {
+  render() {
+
+    //destructing
+
+    const {name,surname,age} = this.props;
+    return (
+      <div>
+          <ul>
+              <li>Ad : {name}</li>
+              <li>Soyad : {surname}</li>
+              <li>Yas : {age}</li>
+          </ul>
+      </div>
+    )
+  }
+}
+
+User.propTypes = {
+    name: PropTypes.string.isRequired,
+    surname: PropTypes.string.isRequired,
+    age: PropTypes.string.isRequired
+}
+
+User.defaultProps = {
+    name: "melumat yoxdur",
+    surname: "melumat yoxdur",
+    age:"melumat yoxdur"
+}
+
+
+
+
+export default User;
+
+---- app.js
+
+
+
+import './App.css';
+import Navbar from './components/Navbar';
+import User from './components/User';
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <hr />
+      <User
+     
+      />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+--- statik olaraq da default deyerler vere bilirik:
+
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
+
+class User extends Component {
+
+    static defaultProps = {
+        name: "melumat yoxdur",
+    surname: "melumat yoxdur",
+    age:"melumat yoxdur"
+    }
+  render() {
+
+    //destructing
+
+    const {name,surname,age} = this.props;
+    return (
+      <div>
+          <ul>
+              <li>Ad : {name}</li>
+              <li>Soyad : {surname}</li>
+              <li>Yas : {age}</li>
+          </ul>
+      </div>
+    )
+  }
+}
+
+User.propTypes = {
+    name: PropTypes.string.isRequired,
+    surname: PropTypes.string.isRequired,
+    age: PropTypes.string.isRequired
+}
+
+
+
+
+export default User;

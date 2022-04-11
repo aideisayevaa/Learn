@@ -1,7 +1,14 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 
 class User extends Component {
+
+    static defaultProps = {
+        name: "melumat yoxdur",
+    surname: "melumat yoxdur",
+    age:"melumat yoxdur"
+    }
   render() {
 
     //destructing
@@ -18,6 +25,13 @@ class User extends Component {
     )
   }
 }
+
+User.propTypes = {
+    name: PropTypes.string.isRequired,
+    surname: PropTypes.string.isRequired,
+    age: PropTypes.string.isRequired
+}
+
 
 
 
