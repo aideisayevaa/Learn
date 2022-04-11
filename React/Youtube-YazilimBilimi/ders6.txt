@@ -1,0 +1,32 @@
+- render edilende bir ana class render edilmelidi
+
+
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Hello React</h1>
+     
+    </div>
+
+    <p>Lorem ipsum dolor sit amet</p>
+  );
+}
+
+export default App;
+
+
+ - bele yazanda xeta verir
+
+ - yuxaridaki formada yazzanda terminalda warning cixir 
+bunun sebebi ise import logo from './logo.svg'; logo.svgden
+ istifade etmirikse onda onu silmeliyik
+
+
+className evezine class yazsaq ve ya label daxilindeki htmlFor 
+evezine for yazsaq xeta verir
+
+
+

@@ -20,3 +20,9 @@ function App() {
 }
 
 export default App;
+
+
+
+- biz eger 1 + 1-i ve diger yazilanlari {}-siz yazsaq
+bize onnu ekranda yazi olaraq gosterir hec biri emeliyyat yerine yetirmir
+amma {} daxilinde yazanda js-in uygun emeliyyatini yerine yetirir
