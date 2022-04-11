@@ -1,13 +1,10 @@
 
 import './App.css';
-import User from './components/User'
 
 function App() {
   return (
-    <div className='App'>
-     <h1>ADD COMPONENT</h1>
-      <User/>
-      <User/>
+    <div>
+     <h1 style={{color:"blue",fontSize:"50px"}}>ADD COMPONENT</h1>
     </div>
   );
 }

@@ -1,0 +1,22 @@
+- line style daxil edilmesi :
+
+
+import './App.css';
+
+function App() {
+  return (
+    <div>
+     <h1 style={{color:"blue",fontSize:"50px"}}>ADD COMPONENT</h1>
+    </div>
+  );
+}
+
+export default App;
+
+
+-.css fayllarinda da hemise oldugu kimi class adlariyla css elave etmek olar
+
+
+- bootstrap elave etmek ucun hemiseki qayda da linkleri
+index.html-e elave edirik
+
