@@ -1,3 +1,9 @@
+-- state yaratmagin iki yolu var
+  - kod setrinin en ustunde
+  - constructor daxilinde
+
+
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
@@ -6,7 +12,7 @@ class User extends Component {
 
  /*  state = {
     isVisibe : false
-  } */
+  } */   (kod setrinin ustunde yazilan forma)
 
   static defaultProps = {
     name: "melumat yoxdur",
@@ -14,7 +20,7 @@ class User extends Component {
     age: "melumat yoxdur"
   }
 
-
+(constructor formasindaa yazilan forma)
   constructor(props) {
     super(props)
 
@@ -37,6 +43,8 @@ class User extends Component {
             <i className="far fa-trash-alt" style={{ cursor: "pointer" }}></i>
           </div>
 
+
+(isVisible true olanda kod setrini gosterir false olanda gostermir)
           {
             isVisibe ? <div className="card-body">
               <p className="card-text">Soyad : {surname}</p>
