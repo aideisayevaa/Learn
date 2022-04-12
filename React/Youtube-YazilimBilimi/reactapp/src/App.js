@@ -9,7 +9,15 @@ function App() {
       <Navbar />
       <hr />
       <User
-     
+        name="dfkjnd"
+        surname="kdkcxlc"
+        age="kzsdl"
+      />
+
+      <User
+        name="dfkjnd"
+        surname="kdkcxlc"
+        age="kzsdl"
       />
     </div>
   );

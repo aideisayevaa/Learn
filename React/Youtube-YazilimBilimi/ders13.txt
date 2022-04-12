@@ -1,3 +1,7 @@
+-- fontawesome linki de index.htmle qosulur
+
+eyni qaydada istifade olunur class evezine className yaziriq
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
