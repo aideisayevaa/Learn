@@ -1,0 +1,71 @@
+ 1 react app fayli yuklenir
+
+
+1.1) npm uninstall -g create-react-app
+1.2) npm install -g create-react-app
+1.3) npx create-react-app my-react-app
+1.4) cd my-react-app
+1.5) npm start
+
+
+ 2 src-deki lazimsiz fayllar silinir asagidaki fayllar qalir:
+ - app.css
+ - app.js
+ - index.css
+ - index.js
+
+
+
+3 src altinda components adli papka yaradilir ve Header.js elave edilir
+app.js de import Header from  './components/Header' yazilaraq
+hemin yaradigimiz faylli import etmis oluruq
+
+
+--- header.js
+import { useState } from 'react'
+
+function Header(props) {
+    return (
+        <>
+
+            header   
+            
+        </>
+    )
+}
+
+export default Header
+
+
+--- app.js
+import './App.css';
+import Header from './components/Header'
+
+function App() {
+  return (
+    <>
+      <Header />
+    </>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
