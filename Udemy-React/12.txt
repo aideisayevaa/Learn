@@ -1,0 +1,26 @@
+inline style yazanda {}-siz yazmisiqsa error verir
+
+      <h1 style="color:red">Basliq 1</h1>
+
+bele yazsaq error verir cunki {}siz yazdiq 
+
+
+
+
+      <h1 style={{color:"red"}}>Basliq 1</h1>
+
+yazanda ise dogrudur
+
+
+
+
+      <h1 style={{color:"red",margin-bottom:"100px"}}>Basliq 1</h1>  -   yanlisdir
+
+iki ve daha cox sozden ibaret olan css adlari yazanda 
+onlari ya dirnaq icerisinde string kimi yazmaliyiq ya 
+da camelCase-den istifade etmeliyik
+duzgun versiyalari asagidakilardi: 
+
+
+      <h1 style={{color:"red","margin-bottom":"100px"}}>Basliq 1</h1>
+      <h1 style={{color:"red",marginBottom:"100px"}}>Basliq 1</h1>

@@ -1,0 +1,5 @@
+css kodlarini elave etmek isteyende app.css icerisinde 
+yazib app.js icersiine import edirik eger her bir yerde
+ hemin css faylimizin oxunmasini isteyirikse onda 
+index.css fayli icerisinde yaziriq index.js faylinin 
+icerisinde index.css faylini import edirik
