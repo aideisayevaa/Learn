@@ -1,0 +1,41 @@
+Neye gore react isletmeliyik?
+
+
+reactin sahib oldugu boyuk bir comunity var:Facebook
+hemise guncellenen bir kitabxanadir
+bilesen bazli kodlar olduguna gore yeni birdefe
+yazib bir nece yerde tekrar istofade ede bildiyimize 
+gore daha derlil toplu oxunaqli kodlar yazmaq olur
+UI-da state yonetimi web boyuk olanda cixilmaz 
+hala gelir. meselen jquery isledirik domda neyise
+ deyisende neyii hara niye yazdigimizi yadimizda
+ saxlamalyiqki deyisende bir error cixxanda 
+hell ede bilek eger komanda sekilinde yazilaan
+bir koddursa onda is daha da cetinlesir
+
+react re-usuble-dir yeni yeniden islene bilir esnek
+yapisi var her yer ayri ayri yazilir deye deyisiklik
+olanda rahatliqla deyismek olur
+
+
+Deklarativ : 
+React interaktiv UI yaranmasını çox asanlaşdırır. Applikasiyanızın hər bir halı üçün sadə 
+görünüşlər yaradın. Məlumatlar dəyişən zaman React düzgün komponentləri səmərəli şəkildə 
+dəyişir və render edir. Deklarativ görünüşlər sizini kodunuzu daha proqnozlaşdırıla 
+bilən və asan dibuq olunan edir.
+
+
+Komponent Əsasında : 
+Öz halını idarə edən inkapsulasiyalı komponentlər düzəldib, sonra komponentləri tərtib 
+edərək kompleks UI yaradın. Komponent məntiqi şablon əvəzinə JavaScriptdə yazıldığından,
+ siz asanlıqla zəngin məlumatları öz applikasiyanıza göndərərək vəziyyəti DOMdan 
+kənarda saxlaya bilərsiniz.
+
+
+Bir dəfə öyrən, Hər yerdə yaz :
+Biz, sizin qalan texnologiya stekiniz haqqında heç bir təxmin etmirik. Bu səbədən 
+siz mövcud kodunuzu yenidən yazmadan, yeni xüsusiyyətləri Reactdə yaza bilərsiniz.
+React həmçinin Node ilə serverdə render edə və mobil applikasiyaları React Native
+ilə dəstəkləyə bilər.
+
+
