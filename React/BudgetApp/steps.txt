@@ -53,6 +53,17 @@ export default App;
 
 
 
+-- pul xercleme proqraminda ilk olaraq baslangic pul miqdari olmalidir
+bunun ucun reactdan asagidakilari import edirik
+
+import { useState, useEffect } from 'react'
+
+
+https://az.reactjs.org/docs/hooks-reference.html
+https://az.reactjs.org/docs/hooks-overview.html
+
+
+
 
 
 

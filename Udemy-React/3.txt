@@ -1,0 +1,57 @@
+React nedir?
+
+facebook terefinden yaradilan js kitabxanasidir. 
+framework daha genis anlayisdir angular ve vue frameworkdu
+angulari google vue-ni ise evan you yaratmisdir
+react web saytin sadece gorunen terefini deyismek ucundur
+singlepage-ler yaradilir
+tekrarlanan yerlerdeki kodlari tekrar tekrar yazmaq evezine 1 defe yazib 
+lazimi yerlerde isletmek olur
+interaktiv sehifeler yazmaga komek edir
+React - istifadəçi interfeysləri (UI) yaratmaq üçün deklarativ, 
+səmərəli və elastik Javascript kitabxanasıdır.
+react komponentlerden teskil olunib yeni kicik serbest kod hisselerinden
+Məlumat dəyişəndə React səmərəli şəkildə 
+komponentləri yeniləyir və yenidən render edir
+react native vasitesile mobile appler yazila bilir
+react open sourcedi
+
+
+
+open source - Kaynak kodları herkese açık olan yazılımlar, 
+her yazılımcı tarafından geliştirilebiliyor, öğrenmek için 
+kullanılabiliyor, değiştirilebiliyor ve en önemlisi denetlenebiliyor. 
+Ürettikleri yazılımlardan bir gelir elde etmek isteyen şirketlerin
+ yanında, kişilerin ticari sır niteliğindeki bilgileri 
+paylaşmak üzerine kurulu bu yaklaşımı bir devrim niteliği taşıyor.
+Açık kaynak, bir bilgisayar yazılımının makine diline dönüştürülüp 
+kullanımından önceki, programcılar tarafından okunur, anlaşılır, 
+yeni amaçlara uygun değiştirilebilir hâlinin gizli tutulmayıp 
+açık, yani okunabilir hâlde kamuyla paylaşılıyor olmasına verilen isimdir.
+
+
+
+Müəllif (lər)	Facebook
+İnkişaf etdiricilər	Cordan Uolk
+Proqramlaşdırma dili	JavaScript
+Əməliyyat sistemi	kross-platforma
+Yayımlanma tarixi	20 may, 2013
+Sonuncu versiya	16.13.1 (19 mart, 2020)
+Lisenziya	MIT
+Sayt	reactjs.org
+
+
+
+React'i kullananlar arasında Khan Academy, Netflix,
+ Yahoo, Facebook, Instagram.com, Sony
+ ve Atlassian, AirBnb, BBC, Slack, Paypal,
+Dropbox, Cloudflare, Tesla, Whatsapp web, Figma
+Marvel, Npm, Skype, Outlook, Discord, oneDrive ve s. 
+örnek gösterilebilir
+
+
+
+React Native
+2015 yılında Facebook, iOS ve Android işletim 
+sistemlerine yönelik, React altyapısı kullanılarak 
+uygulama geliştirme platformu React Native'i duyurdu.
