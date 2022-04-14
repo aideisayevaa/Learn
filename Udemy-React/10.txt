@@ -1,0 +1,39 @@
+JSX nedir?
+
+
+js ile htmlin birlesimidir
+js icerisinde html taglarini yaza bilmeyimizi temin edir
+meselen app.js daxilinde yazdigimiz html taglari jsxdir
+
+
+
+const element = <h1>Merhaba Dünya!</h1>;
+Bu string yada HTML değildir.
+Buna JSX denir, JavaScript için bir syntax uzantısıdır.
+JSX, React elementleri üretir.
+
+Herhangi bir JavaScript ifadesini JSX’de süslü parantez
+ içine sarmalayarak yerleştirebilirsiniz.
+Örneğin; { 2 + 2 }, { user.firstName } ve 
+{ formatName(user) } gibi sayısal işlem, obje, değişken, 
+fonksiyon vb kullanabilirsiniz.
+
+
+JSX JavaScript’e HTML’den daha yakın olduğundan ReactDOM,
+ HTML nitelik adları yerine camelCase adlandırma kuralını
+ kullanır.  tag icerisnde css yazanda da camelCase  yazilir meselen:
+fontSize
+Örneğin JSX’te class yerine className, tabindex yerine 
+tabIndex, for yerine htmlFor kullanılır
+
+
+
+react ile web uygulamalr gelistirirken arayuz olusturmamizi
+kolaylasdiran bir javascript eklentisidir
+
+js ifadeleri (degiskenler,islemler ve s.) jsx icerisinde islene bilir
+
+
+
+
+https://medium.com/kodcular/jsx-nedir-d7ebd9f93045
