@@ -1,0 +1,6 @@
+cmd ve ya bash ekraninda
+
+
+npx create-react-app my_app  -- buradaki axirda yazdigimiz  folder adi boyuk herfle baslaya bilmez
+cd my_app
+npm start

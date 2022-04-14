@@ -1,0 +1,3 @@
+cmd ekranina node --version yazanda
+node.js versiyasini
+npm --version yazanda ise npm versiyasini gosterir

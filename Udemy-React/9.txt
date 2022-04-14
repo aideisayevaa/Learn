@@ -1,0 +1,49 @@
+reacti yukledikden sonra yuklenen fayllari:
+
+node_module  bu papkada reactdan istifade ede bilmeyimiz ucun lazim
+olan paketler yuklenir
+
+index.html-de sadece olara id-si root olan bir div-miz var
+
+src daxilindeki reportWebVitals, app.test.js ve setuoTests.js fayllarini sile bilerik
+bu zaman index.js faylindan asagidaki fayllari da silmeliyik yoxsa xeta verir
+import reportWebVitals from './reportWebVitals';
+reportWebVitals();
+
+
+
+app.js de yazilan index.js de render edilib ekranda gosterilir
+
+package.json - node_module folderindeki bagimliliqlarimiz,yani bizim bir
+react projecti yaratmagimiz ucun bize lazim olan paketleri cemlesdiren yapi
+confing kimi de dusune bilerik react yazanda hansisa baglantiyi elave etmek lazim gelende
+dependencies altindan elave etmis olacagiq
+bir de devdependencies vardir ki, development asamasinda gerekli olan yalnizca
+yazilimi gelistirirken production icin gerekli olmayan paketleri de buraya yukleyeceyik
+
+burada hemcinin projecti basladan da yazdigimiz npm start bburadan gelir asagidaki kodlar vasitesiler
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"s
+  },
+
+
+burada ise project haqqinda melumatlari gosterir
+
+  "name": "react-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.0.1",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+
+
+https://medium.com/frontend-development-with-js/react-örnek-proje-mimarisi-44685c38839d
