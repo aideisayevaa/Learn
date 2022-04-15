@@ -1,3 +1,16 @@
+deyisenler elave edende onlari jsx daxilinde {} yazmaliyiq
+ ki uzerinde emeliyyat yerine yetire bilsin yoxsa onu
+string kimi basa dusur myName yazanda ekrana myName cixarir
+ amma {myName} yazanda ekrana Aida cixarir
+ deyisenleri en yuxarida app funksiyasindan evvelde teyin
+ edirik
+hemcinin {} daxilinde yazdigimiz mudddetce muxtelif funksiyalari 
+da yaza bilerik bir sozle jse aid funksiyalari burada yazmaq olar
+
+
+-- app.js
+
+
 import './App.css';
 
 var myName = "Aida"
@@ -7,12 +20,6 @@ const mySurname = "Isayeva"
 function App() {
   return (
     <div>
-      <a href="https://unsplash.com/">Hello world</a>
-
-      <img src="https://images.unsplash.com/photo-1649829875371-1f583c2cf057?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="" />
-
-      <button className="yellow">Button</button>
-      <p>p tagi</p>
       <h1 style={{ color: "red", marginBottom: "100px" }}>{myName}</h1>
       <h4>{mySurname}</h4>
       <h4>{mySurname.toUpperCase()}</h4>
