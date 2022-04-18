@@ -1,0 +1,11 @@
+ilk once src fayli altinda components folderi yaradiriq yazacagimiz butun komponontlar burada 
+olacaq meselen HelloWorld.js yaradib bura elave edek daha sonr hemin bu yaratdigimiiz HelloWorld.js
+ daxilinde import React from 'react' yaziriq ki react terefnden taninsin sonra ise const 
+HelloWorld(boyuk herfle balsmasi vacibdi) = () =>{} yaziriq bunun daxilnde return() yaziriq butun
+ yazacaqlarimmiz return daxilinde olur meselen div daxilinde itenilen nese yaziriq bu yazdiqlarimizi 
+diger fayllarda gore bilmek ucun en sonda export default HelloWorld(funksiyanin adi) yazilir app.js
+ faylinda ise bu fayli import edirik import HelloWorld from './components/HelllowWorld' yaziriq 
+sonuna .js yazmasaq da olar sonra ise yazdigimiz kompinontu istfade etmek istediyimiz yerde 
+<HelloWorld/> yazaraq cagiririq
+
+komponontlari adlandiranda simvollarla, kicik herfle, reqemle baslaya bilmez
