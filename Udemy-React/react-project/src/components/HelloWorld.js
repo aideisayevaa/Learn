@@ -9,7 +9,8 @@ const HelloWorld = ({ resim, buttonyazisi, say, children,secim }) => {
             <img className='helloWorldImage' src={resim} alt="" />
             <button className='helloWorldButton'>{buttonyazisi}</button>
             <p className="hellWorldP">{say}</p>
-            <h4>{secim == true ? "Aktivdir" : "Aktiv deyil"}</h4>
+            
+            {/* <h4>{secim = true ? "Aktivdir" : "Aktiv deyil"}</h4> */}
             
 
 

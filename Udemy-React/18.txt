@@ -1,0 +1,100 @@
+import React from 'react'
+
+const Button = () => {
+
+    function Clicked () {
+        console.log("Tiklandi")
+    }
+
+    return (
+        <div>
+            <button onClick={Clicked}>Click</button>
+        </div>
+    )
+}
+
+export default Button
+
+
+   bele yazanda butona basanda console-de tiklandi sozunu gorururk
+
+
+
+
+
+
+--------------------------------------------------------------------
+
+
+import React from 'react'
+
+const Button = () => {
+
+    function Clicked (deyisen) {
+        console.log(deyisen)
+    }
+
+    return (
+        <div>
+            <button onClick={()=>{
+                Clicked("Aida")
+            }}>Click</button>
+        </div>
+    )
+}
+
+export default Button
+
+
+    bele yazanda butona basanda console-de funksiya daxilinde yazdigimiz deyeri gorururk
+
+
+-----------------------------------------------
+
+
+import React from 'react'
+
+const Button = () => {
+
+    function Clicked (e) {
+        console.log(e)
+    }
+
+    return (
+        <div>
+            <button onClick={Clicked}>Click</button>
+        </div>
+    )
+}
+
+export default Button
+
+
+
+bele yazanda butona basanda console-de onClicke aid deyerleri goruruk
+-----------------------------------------------------
+
+
+import React from 'react'
+
+const Button = () => {
+
+    function Clicked (e,deyisen) {
+        console.log(e,deyisen)
+    }
+
+    return (
+        <div>
+            <button onClick={(e)=>{
+                Clicked(e,"Aida")
+            }}>Click</button>
+        </div>
+    )
+}
+
+export default Button
+
+
+
+bele yazanda butona basanda console-de her ikisi gorunur
+
