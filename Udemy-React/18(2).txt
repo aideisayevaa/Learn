@@ -1,0 +1,63 @@
+import React from 'react'
+
+const Button = () => {
+    return (
+        <div style={{ backgroundColor: "gray", height: "400px" }} onClick={() => {
+            console.log("dive kliklendi")
+        }}>
+
+        </div>
+    )
+}
+
+export default Button
+
+
+   bele yazanda divin herhansi bir yerine klikleyende bize consolede yazdigimiz mesaji gosterir
+
+
+
+--------------------------------------------------------------------
+
+
+import React from 'react'
+
+const Button = () => {
+    return (
+        <div style={{ backgroundColor: "gray", height: "400px" }} onClick={() => {
+            console.log("dive kliklendi")
+        }}>
+            <input type="text" onChange={()=>{
+                console.log('Yazi yazidi')
+            }} />
+        </div>
+    )
+}
+
+export default Button
+
+
+     bele yazanda inputun daxilinde her yazanda consolede mesaj gosterir
+
+
+--------------------------------------------------
+
+gosterilen mesaji idare etmek isteyriikse asagidaki kimi yaziriq
+bu zaman her herf yazildiqca ekranda ne yazildigi da cixacaq
+
+
+import React from 'react'
+
+const Button = () => {
+    return (
+        <div style={{ backgroundColor: "gray", height: "400px" }} onClick={() => {
+            console.log()
+        }}>
+            <input type="text" onChange={(e) => {
+                console.log(e.target.value)
+            }} />
+        </div>
+    )
+}
+
+export default Button

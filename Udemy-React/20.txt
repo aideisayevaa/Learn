@@ -1,0 +1,72 @@
+--app.js
+
+import React from 'react'
+import './App.css';
+
+var yas = 20
+
+function App() {
+
+  const yasDeyisme=()=>{
+    yas = 40
+    console.log("Yas : ",yas)
+
+  }
+
+  return (
+    <div>
+      <h1>Yas : {yas}</h1>
+      <button onClick={yasDeyisme}>Yasi deyisdir</button>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+bu formada yazanda deyisiklik olur amma biz onu ancaq consolede goruruk 
+react icerisinde gore bilmirik bu zaman useStatelerden
+istifade edirik
+
+
+
+--------------------------------------------------
+
+import React, {useState} from 'react'
+import './App.css';
+
+
+function App() {
+
+  const [number, setNumber] = useState(20)
+
+  const changeNumber=()=>{
+    const n = number+10
+    setNumber(n)
+    console.log("n",n)
+  }
+
+  return (
+    <div>
+      <h1>Yas : {number}</h1>
+      <button onClick={changeNumber}>Yasi deyisdir</button>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+const [state, setState] = useState(initialState);
+State dəyəri və bu dəyəri yeniləmək üçün funksiya qaytarır.
+
+İlk render zamanı qaytarılan state (state) ilk arqumentə göndərilən dəyərə (initialState) bərabərdir.
+
+setState funksiyası state-i yeniləmək üçün işlədilir. Bu funksiya yeni state dəyəri qəbul edir və komponenti yeniden render etmə sırasına əlavə edir.
+
+setState(newState);
+Sonrakı render etmələr zamanı useState funksiyasından qaytarılan dəyər ən yeni state dəyəri olacaq.
+

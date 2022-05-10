@@ -1,16 +1,13 @@
 import React from 'react'
 
 const Button = () => {
-
-    function Clicked (e,deyisen) {
-        console.log(e,deyisen)
-    }
-
     return (
-        <div>
-            <button onClick={(e)=>{
-                Clicked(e,"Aida")
-            }}>Click</button>
+        <div style={{ backgroundColor: "gray", height: "400px" }} onClick={() => {
+            console.log()
+        }}>
+            <input type="text" onChange={(e) => {
+                console.log(e.target.value)
+            }} />
         </div>
     )
 }
