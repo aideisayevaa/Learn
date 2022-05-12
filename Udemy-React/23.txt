@@ -1,0 +1,112 @@
+components adli papka yaradiriq ve onun daxilinde input adli papka elvae
+ edirik hemon input papkasi daxiline input.css( inputun oz xususu cssleri
+ olacagina gore) ve input.js fayllari elave edirik
+
+
+
+
+asagidaki kodlarin komekliyi ile input yaratdiq onu app js daxilinde 
+cagirdiq ve input.js daxilinde propslarin komekliyi ile hansi default 
+deyisenleri alacagini ve deyisenlerini hansi tipde olacagini ve hansi
+ deyisenleri yazmagin zerurui oldugunu gosterdik hamcinin deyisenler 
+vasitesile hanislarain xaricden geleceyini teyin etdik ve inputa css 
+kodlari yazdiq
+
+
+
+-- app.js
+
+import React, { useState } from 'react'
+import './App.css';
+import Input from './components/input/input';
+
+
+function App() {
+  return (
+    <div>
+      <Input />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+-- input.js
+import React from 'react'
+import PropTypes from 'prop-types'
+import './input.css'
+
+const Input = ({type, placeholder, value, onChange}) => {
+    return (
+        <input className='custom-input' value={value} type={type} placeholder={placeholder} onChange={onChange} />
+    )
+}
+
+Input.propTypes = {
+    value: PropTypes.string.isRequired,
+    placeholder: PropTypes.string,
+    onChange: PropTypes.func.isRequired,
+    type: PropTypes.string
+
+}
+
+Input.defaultProps = {
+    placeholder: "Daxil edin ... ",
+    type: "text"
+}
+
+export default Input
+
+
+
+-- input.css
+
+.custom-input{
+    outline: none;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+
+
+
+
+-- app.js
+
+
+import React, { useState } from 'react'
+import './App.css';
+import Input from './components/input/input';
+
+
+function App() {
+  const [text, setText] = useState("Aida")
+  return (
+    <div>
+      {text}
+      <Input value={text} placeholder={"Ad elave edin"} onChange={(e) => {
+        setText(e.target.value)
+      }} />
+    </div>
+  );
+}
+
+export default App;
+
