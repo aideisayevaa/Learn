@@ -1,0 +1,80 @@
+component papkasi daxilinde button papkasi yaradib button.js ve button.css fayllarini elvae edirik
+
+
+-- app.js
+
+import React, { useState } from 'react'
+import './App.css';
+import Input from './components/input/input';
+import Button from './components/button/button';
+
+
+function App() {
+  const [text, setText] = useState("Aida")
+  return (
+    <div>
+      {text}
+      <Input value={text} placeholder={"Ad elave edin"} onChange={(e) => {
+        setText(e.target.value)
+      }} />
+
+      
+      <Button text="Sign in" onClick={()=>{alert("kliklendi")}}/>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+-- button.js
+import React from 'react'
+import PropTypes from 'prop-types'
+import './button.css'
+
+const Button = ({onClick,text}) => {
+    return (
+        <button className='custom-button' onClick={onClick}>{text}</button>
+    )
+}
+
+Button.propTypes = {
+    onClick: PropTypes.func.isRequired,
+    text: PropTypes.string
+}
+
+Button.defaultProps = {
+    text: "Klikle"
+}
+
+export default Button
+
+
+
+
+-- button.css
+
+
+.custom-button {
+    text-transform: uppercase;
+    outline: none;
+    width: max-content;
+    border: none;
+    box-sizing: border-box;
+    background-color: #4caf50;
+    padding: 20px;
+    font-size: 14px;
+    transition: all .3s ease;
+    cursor: pointer;
+    color: #fff;
+}
+
+.custom-button:hover,
+.custom-button:active,
+.custom-button:focus {
+    background-color: #43a047;
+}
