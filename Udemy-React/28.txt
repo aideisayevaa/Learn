@@ -1,0 +1,40 @@
+import React, { useState } from 'react'
+import './App.css';
+
+
+function App() {
+
+  const clicked = () => {
+    alert("P etiketine kliklendi")
+    const arr = [... data]
+    arr[0].name="Mahmut"
+    setData(arr)
+  }
+
+
+  const [data, setData] = useState([{ name: "Aida" }, { name: "Aida2" }, { name: "Aida3" }, { name: "Aida" }])
+  return (
+    <div className="App">
+      <p onClick={clicked}>P ETIKETI</p>
+      <ul>
+        {data.map((item, index) => {
+          return (
+            <li key={index}>{item.name}</li>
+          )
+        })}
+      </ul>
+    </div >
+  )
+}
+
+export default App;
+
+
+
+
+
+
+key-den ona gore istifade olunuir ki tutaqki bizim 50000 
+dene datamiz var onlardan 99cu nu deyismek teleb olunur 
+keyi 99 olani secib deyiisirk bu ise isimizi olduqca 
+suretlendirmeye bize komek edir
