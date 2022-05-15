@@ -1,0 +1,31 @@
+import React, { useState } from 'react'
+import './App.css';
+
+
+function App() {
+const onClickLi =(name) =>{
+  alert(name)
+}
+
+  const [data, setData] = useState([{ name: "Aida" }, { name: "Aida2" }, { name: "Aida3" }, { name: "Aida" }])
+  return (
+    <div className="App">
+      <h1>List</h1>
+      <ul>
+        {data.map((item, index) => {
+          return (
+            <li onClick={()=>{onClickLi(item.name)}} key={index}>{item.name}</li>
+          )
+        })}
+      </ul>
+    </div >
+  )
+}
+
+export default App;
+
+
+
+
+
+bele yazanda hansi li-ye kliklesek oradaki adi cixarir
