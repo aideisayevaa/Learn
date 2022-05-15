@@ -1,0 +1,27 @@
+import React, { useState } from 'react'
+
+function App() {
+
+  const [count, setCount] = useState(0)
+  const [text, setText] = useState("default")
+
+
+  return (
+    <div>
+      <h3>{count}</h3>
+      <button onClick={() => {
+        setCount(count + 1)
+      }}>Artirma</button>
+
+
+      <h1>{text}</h1>
+      <button onClick={() => {
+        setText("Aida")
+      }}>Aida yaz</button>
+    
+
+    </div>
+  )
+}
+
+export default App;
