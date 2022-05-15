@@ -1,0 +1,128 @@
+import React, { useState } from 'react'
+import HellolWorld from './Components/HellloWorld';
+import './App.css';
+
+
+function App() {
+
+  function tikla(){
+    alert("tiklandi")
+  }
+  const myList = [<p onClick={tikla} key={1}>P etiketi</p>, <h1 key={2}>Basliq 1</h1>, <h2 key={3}>Basliq 2</h2>, <HellolWorld key={4}  />]
+
+  return (
+    <div className="App">
+      {myList}
+    </div>
+  )
+}
+
+export default App;
+
+
+
+
+
+ burada key sozlerini yazmasaq console-de xeta cixarir
+bele yazilis listlerin arrayda yazilmasidir bunu state daxilinde yazmaq istesek asagidaki kimi yazmaliyiq:
+
+
+
+import React, { useState } from 'react'
+import HellolWorld from './Components/HellloWorld';
+import './App.css';
+
+
+function App() {
+
+  function tikla(){
+    alert("tiklandi")
+  }
+  
+  const [componentList,setComponentList] = useState(
+    [<p onClick={tikla} key={1}>P etiketi</p>, <h1 key={2}>Basliq 1</h1>, <h2 key={3}>Basliq 2</h2>, <HellolWorld key={4}  />]
+  )
+
+  return (
+    <div className="App">
+      {componentList}
+    </div>
+  )
+}
+
+export default App;
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+biz burada use stateden istifade edib 3 deneobyekt elave edib
+ li daxilinde cixarmaq istesek asagidaki sekilde cixara bilerik
+ amma bu elvaerisle usul deyil ona gore de map-den istifade etmeliyik
+
+
+
+import React, { useState } from 'react'
+import './App.css';
+
+
+function App() {
+
+  
+const [data,setDate] = useState([{name: "Aida"}, {name: "Aida2"}, {name:"Aida3"}])
+  return (
+    <div className="App">
+     <ul>
+       <li>{data[0].name}</li>
+       <li>{data[1].name}</li>
+       <li>{data[2].name}</li>
+
+     </ul>
+    </div>
+  )
+}
+
+export default App;
+
+
+
+
+BU FORMADA YAZMAQ DAHA ELVERISLIDIR:
+
+import React, { useState } from 'react'
+import './App.css';
+
+
+function App() {
+
+
+  const [data, setDate] = useState([{ name: "Aida" }, { name: "Aida2" }, { name: "Aida3" }])
+  return (
+    <div className="App">
+      <ul>
+        {data.map((item) => {
+          return (
+            <li>{item.name}</li>
+          )
+        })}
+      </ul>
+    </div >
+  )
+}
+
+export default App;
+
+
+
+AMMA BELE YAZANDA KEY ERROR VERIR ASAGIDAKI FORMADA KEY ELAVE EDE BILERIK
+
+
+
+	<ul>
+        {data.map((item,index) => {
+          return (
+            <li key={index}>{item.name}</li>
+          )
+        })}
+      </ul>
