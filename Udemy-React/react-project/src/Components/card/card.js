@@ -5,17 +5,16 @@ import CardImage from '../cardImage/cardImage'
 import CardInfo from '../cardInfo/cardInfo'
 
 
-const Card = () => {
+const Card = ({ title, image, info , onClick}) => {
     return (
-        <div className="card">
+        <div className="card" onClick={()=>{onClick()}}>
             <div className="card-body">
 
-                <CardTitle title={"Men Kart basligiyam"} />
+                <CardTitle title={title} />
 
-                <CardImage url="https://images.unsplash.com/photo-1653170916927-a2aa6e60db3c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500" />
+                <CardImage url={image} />
 
-                <CardInfo info="mehsul haqqinda melumat - 1" />
-
+                <CardInfo info={info} />
             </div>
         </div>
 
