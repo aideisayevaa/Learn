@@ -3,7 +3,7 @@ import './cardInfo.css'
 
 const CardInfo = ({ info }) => {
     return (
-        <div className="card-I=info">{info}</div>
+        <div className="card-info">{info}</div>
     )
 }
 
