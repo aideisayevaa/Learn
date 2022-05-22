@@ -29,3 +29,62 @@ export default App;
 
 
 bele yazanda hansi li-ye kliklesek oradaki adi cixarir
+
+
+
+
+-----------------------------------------------------------------------
+
+
+asagidaki sertler vasitesile:
+ - herf sayi 3den cox olanlar h1 icerisinde az olanlar pocerisinde yazilir
+ - herf sayi 3den az olanlarin evezine "Addaki herf sayi azdi" yazisi yazilir
+ - include terkbinde varsa demekdi, eger hikmet sozu varsa onu ekrana cixartmir
+ - sozler icerisinde ahmet sozu varsa onun ilk herini boyuk yazir
+
+
+
+
+
+
+
+
+import React, { useState } from 'react'
+import './App.css';
+
+
+function App() {
+  const onClickLi = (name) => {
+    console.log(name)
+  }
+
+  const [data, setData] = useState([{ name: "Aida" }, { name: "aa" }, { name: "Aida2" }, { name: "Aida3" }, { name: "Aida" }, { name: "hikmet" }, { name: "ahmet" }])
+  return (
+    <div className="App">
+      <h1>List</h1>
+      {data.map((item, index) => {
+
+        if (item.name.includes("hikmet")) {
+          return null
+        }
+
+        if (item.name == "ahmet") {
+          return <h2> {item.name.charAt(0).toUpperCase()}</h2>
+        }
+
+        if (item.name.length >= 3) {
+          return <h1 key={index}>{item.name}</h1>
+        }
+
+        else {
+          return <p key={index} onClick={() => {
+            onClickLi(item.name)
+          }}>{item.name.length <= 2 ? "Addaki herf sayi azdi" : item.name}</p>
+        }
+      })}
+    </div >
+  )
+}
+
+export default App;
+
