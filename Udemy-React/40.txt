@@ -1,0 +1,56 @@
+CustomStyle.module.css adli papka yaradiriq
+
+
+
+-- app.js
+
+
+
+
+import React from 'react'
+import './App.css';
+import styles from "./CustomStyle.module.css"
+
+
+
+function App() {
+  return (
+    <div>
+      <div className={styles.modulerCss}>
+          Hello World
+      </div>
+
+      <div className={styles.customBtn}>
+          Merhaba dunya
+      </div>
+    </div>
+  )
+}
+
+export default App;
+
+
+
+
+
+-- CustomStyle.module.css
+
+
+.modulerCss {
+    background-color: red;
+    width: 200px;
+    height: 400px;
+}
+
+.customBtn {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    color: green;
+    font-size: 14px;
+    font-weight: 600;
+}

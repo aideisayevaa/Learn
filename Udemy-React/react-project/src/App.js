@@ -1,51 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css';
-import styled from 'styled-components'
+import styles from "./CustomStyle.module.css"
 
 
-const Button = styled.button`
-  color: ${props=>props.color ? props.color : "#5c0011"};
-  font-size: 16px;
-  font-weight: 800;
-  border:2px solid #5c0011;
-  padding:8px 16px;
-  outline:none;
-  cursor:pointer;
-`
-
-const PrimaryBtn = styled(Button)`
-  color:#ff7878;
-  border: 2px solid #ff7875;
-`
-const PrimaryBtnCustom = styled(PrimaryBtn)`
-font-size:40px
-`
-
-
-const CustomTitle = ({ className, children }) => {
-  return <h1 className={className}>{children}</h1>
-}
-
-const StyledCustomTitle = styled(CustomTitle)`
- color:#f5222d;
- font-size:50px;
- text-transform:uppercase;
-`
-
-const StyledCustomTitleSmallFont=styled(StyledCustomTitle)`
-  font-size:8px
-  font-weight: ${props=>props.weight ? props.weight : "500"};
-
-`
 
 function App() {
   return (
-    <div className='App'>
-      <Button color='blue'>button</Button>
-      <PrimaryBtn>primary</PrimaryBtn>
-      <PrimaryBtnCustom>Primary Custom</PrimaryBtnCustom>
-      <StyledCustomTitle>Styled custom title</StyledCustomTitle>
-      <StyledCustomTitleSmallFont weight="900">StyledCustomTitleSmallFont</StyledCustomTitleSmallFont>
+    <div>
+      <div className={styles.modulerCss}>
+          Hello World
+      </div>
+
+      <div className={styles.customBtn}>
+          Merhaba dunya
+      </div>
     </div>
   )
 }

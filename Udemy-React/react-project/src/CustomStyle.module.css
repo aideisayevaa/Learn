@@ -1,0 +1,18 @@
+.modulerCss {
+    background-color: red;
+    width: 200px;
+    height: 400px;
+}
+
+.customBtn {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    color: green;
+    font-size: 14px;
+    font-weight: 600;
+}
