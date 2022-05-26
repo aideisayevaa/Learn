@@ -1,0 +1,77 @@
+import React from "react";
+
+const Test = ({ text, text2 }) => {
+    return (
+        <div>
+            <div>{text}</div>
+        </div>
+           
+           
+           <div>{text2}</div>
+
+    )
+}
+
+export default Test
+
+biz bu formada yazanda yeni div xaricinde yazanda error verir 
+div daxilinde yazmaq istemirikse <React.Fragment> - den istifade edirik
+
+
+
+
+import React from "react";
+
+const Test = ({ text, text2 }) => {
+    return (
+        <React.Fragment>
+            <div>{text}</div>
+            <div>{text2}</div>
+        </React.Fragment>
+
+    )
+}
+
+export default Test
+
+
+
+
+basqa bir yazilis: 
+
+
+
+import React, { Fragment } from "react";
+
+const Test = ({ text, text2 }) => {
+    return (
+        <Fragment>
+            <div>{text}</div>
+            <div>{text2}</div>
+        </Fragment>
+
+    )
+}
+
+export default Test
+
+
+
+
+basqa bir yazilis:
+
+
+
+import React from "react";
+
+const Test = ({ text, text2 }) => {
+    return (
+        <>
+            <div>{text}</div>
+            <div>{text2}</div>
+        </>
+
+    )
+}
+
+export default Test
