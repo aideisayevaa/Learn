@@ -1,0 +1,55 @@
+Inputun deyerini ve class adlarini gostermek istesek js terefden asagidaki kimi yaziriq
+
+
+
+import React from 'react'
+import './App.css';
+
+function App() {
+
+
+  return (
+    <div>
+     <input className='abc fde test' id = 'myCustomInput' />
+     <button onClick={()=>{
+       console.log(document.getElementById("myCustomInput").value)
+       console.log(document.getElementById("myCustomInput").classList)
+     }}>Inputun deyerini ve class adlarini goster</button>
+    </div>
+  )
+}
+
+export default App;
+
+
+
+
+reactde yaza bilmeyimiz ucun useRef - den istifade edirikki id-den istifade etmeyek
+getelementbyid evezine islede bilmeyimiz ucun movcuddur
+
+
+
+import React, { useRef } from 'react'
+import './App.css';
+
+function App() {
+
+  const myCustomInput = useRef()
+
+  return (
+    <div>
+      <input className='abc fde test' ref={myCustomInput} />
+      <button onClick={() => {
+
+        console.log(myCustomInput.current.value)
+
+        console.log(myCustomInput.current.classList)
+
+
+      }}>Inputun deyerini ve class adlarini goster</button>
+    </div>
+  )
+}
+
+export default App;
+

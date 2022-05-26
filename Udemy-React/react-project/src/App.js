@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './App.css';
-import Test from './components/test';
 
 function App() {
 
+  const myCustomInput = useRef()
 
   return (
     <div>
-      hello
-     <Test text="merhaba dunya"/>
+      <input className='abc fde test' ref={myCustomInput} />
+      <button onClick={() => {
+
+        console.log(myCustomInput.current.value)
+
+        console.log(myCustomInput.current.classList)
+
+
+      }}>Inputun deyerini ve class adlarini goster</button>
     </div>
   )
 }
