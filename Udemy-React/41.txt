@@ -1,3 +1,7 @@
+-- app.js
+
+
+
 import React, { useState } from 'react'
 import './App.css';
 import styles from "./CustomStyle.module.css"
@@ -33,3 +37,20 @@ function App() {
 
 export default App;
 
+
+
+
+-- CustomStle.module.css
+
+
+.success{
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+.error{
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.primary{
+    background-color: rgba(0, 0, 255, 0.6);
+}

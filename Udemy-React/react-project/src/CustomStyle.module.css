@@ -1,18 +1,11 @@
-.modulerCss {
-    background-color: red;
-    width: 200px;
-    height: 400px;
+.success{
+    background-color: rgba(0, 255, 0, 0.6);
 }
 
-.customBtn {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    outline: none;
-    background-color: aliceblue;
-    color: green;
-    font-size: 14px;
-    font-weight: 600;
+.error{
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.primary{
+    background-color: rgba(0, 0, 255, 0.6);
 }
