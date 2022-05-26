@@ -1,3 +1,21 @@
+csslerden istifade zamani egefr eyni adli classlar varsa ve
+ hemin adlara muxtelif xususiyyetler yazmisiqsa bu zaman hansi
+ xususiyyeti vereceyini qarisdirir ve bu zaman biz burada css 
+componentlerden istifade edirik bunu istifade etmezden evvel 
+biz onu yuklemeliyik bunun ucun 
+
+
+npm install -- save styled-components
+
+
+yaziriq
+
+
+import etmek ucun: 
+
+
+
+
 import React, { useState } from 'react'
 import './App.css';
 import styled from 'styled-components'
@@ -49,4 +67,5 @@ function App() {
 }
 
 export default App;
+
 
