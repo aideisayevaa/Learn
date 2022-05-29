@@ -1,0 +1,2 @@
+Hooklar React 16.8-ə əlavə olunan yenilikdir. Hooklar ilə sinif yazmadan 
+state və ya digər React xüsusiyyətlərindən istifadə edə bilərsiniz.
