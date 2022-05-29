@@ -1,52 +1,33 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { createElement } from 'react'
 import './App.css';
-import Portal from './components/Portal'
+
+const Typo = (props) => {
+  const createEl = (text, as) => {
+    const el = createElement(as, {}, text)
+    return el
+  }
+  return (
+    <>
+      {createEl(props.text, props.as)}
+    </>
+  )
+}
 
 
 
 function App() {
 
-  const customTarget = useRef()
-  const [isExist, setIsExist] = useState(false)
-  const [target, setTarget] = useState(document.body)
-  const [targetText, setTargetText] = useState("Body")
-
-
-  useEffect(() => {
-    if (customTarget.current) {
-      setIsExist(true)
-    }
-  }, [customTarget])
-
-
   return (
     <div>
 
-
-      <div ref={customTarget}>
-
-
-      </div>
-
-      <button onClick={() => {
-        if (targetText == "Body") {
-          setTargetText("Custom Target")
-          setTarget(customTarget.current)
-        }
-        else {
-          setTarget(document.Body)
-          setTargetText("Body")
-        }
-
-      }}>Deyisdir</button>
-
-      <Portal text={targetText} target={target} />
-
+      <Typo text="H1 tegi" as="h1" />
+      <Typo text="H2 tegi" as="h2" />
+      <Typo text="H3 tegi" as="h3" />
+      <Typo text="H4 tegi" as="h4" />
 
     </div>
-  ) 
 
-
+  )
 }
 
 export default App;
