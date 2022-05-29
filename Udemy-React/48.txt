@@ -1,3 +1,14 @@
+array yaradiriq:
+
+  const [data,setdata] = useState(10)
+
+ burada data deyisen, setData bu deyiseni guncellemek ucun lazim olan deyerdi
+useSatate dazilinde yazdigimiz initial deyerdi 
+
+
+
+
+
 import React, { useState } from 'react'
 import './App.css';
 
