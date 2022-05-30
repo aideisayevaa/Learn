@@ -1,59 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import './App.css';
+import useWindowSize from './hooks/useWindowsSize';
 
 
 function App() {
-
-  const [text, setText] = useState("")
-  const [number, setNumber] = useState(0)
-  const [array, setArray] = useState([])
-
-
-  useEffect(() => {
-    console.log("Men sadece 1 defe isleyirem")
-  }, [])
-
-
-  useEffect(() => {
-    console.log("Men hemise isleyirem - input daxilindeki deyer her deyisdikce")
-  })
-
-  useEffect(() => {
-    console.log("Men mene verilen  deyerler deyiserse isleyerem", "number")
-  }, [number])
-
-  useEffect(() => {
-    console.log("Men mene verilen  deyerler deyiserse isleyerem", "array")
-  }, [array])
-
-
-  useEffect(() => {
-    console.log("Men mene verilen hem array hem number  deyerler deyiserse isleyerem", "number", "array")
-  }, [number], [array])
-
-
-
+  const { width, height } = useWindowSize()
   return (
-    <div className='App'>
-      <header className='App-header'>
-        UseEffect
-        <input value={text} onChange={(e) => { setText(e.target.value) }} />
-
-        <button onClick={() => {
-          setNumber(Math.random)
-        }}>Number deyisdir</button>
-
-        <button onClick={() => {
-          setArray([1, 2, 3, 4])
-        }}>Array deyisdir</button>
+    <>
+      <h1>Width :  {width}</h1>
+      <br />
+      <br />
+      <br />
+      <h1>Height :  {height}</h1>
 
 
-        <button onClick={() => {
-          setNumber(Math.random)
-          setArray([1, 2, 3, 4])
-        }}>Array ve number deyisdir</button>
-      </header>
-    </div>
+      {width < 500 && <p>Lorem ipsum dolor sit.</p>}  {/* width 500-den kicik olanda gosterir */}
+    </>
   )
 }
 
