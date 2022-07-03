@@ -1,0 +1,14 @@
+npm list -g --depth 0 
+yazaraq global olaraq yuklenmis paketleri gosterir
+
+npm i -g live server
+live serverin global olaraq yuklenmesi
+
+npm list -g --depth 0 
+yazib yeniden yuklendiyini yoxlayiriq ve live yazisi qarsimiza cixirsa bu o demekdir ki yuklenib
+
+live-server public
+bunu yazandan sonra yeni sehife yaranir
+
+
+(errorlar olduguna gore create-react-app ile fayllarimi yaratdim)

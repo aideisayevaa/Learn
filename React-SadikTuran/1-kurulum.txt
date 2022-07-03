@@ -1,0 +1,13 @@
+https://github.com/dsznajder/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md
+
+
+1) node yuklenir
+2) react developers tools yuklenir (stateleri,componentleri gore bilmek ucun)
+3) ES7+ React/Redux/React-Native snippets adli extentios yuklenir (vs icerisinde)
+
+npm -v
+node -v
+
+
+node yuklenende npm de avtomatik yuklenir
+npm node daxilindekileri install etmek ucun istifade olunur

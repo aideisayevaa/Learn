@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            background-color: rgb(135, 135, 135);
+        }
+
+        .container {
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+            perspective: 1500px;
+        }
+
+        .sidebar {
+            position: absolute;
+            width: 300px;
+            height: 100%;
+            background-color: white;
+            z-index: 100;
+            box-shadow: 0px 2px 20px rgb(73, 73, 73);
+
+            transform: translateX(-300px);
+
+            transition: all .5s;
+
+        }
+
+        .menu-open {
+            transform: translateX(0);
+        }
+
+        .open {
+            transform: translate3d(300px, 0, -300px)
+        }
+
+        .content {
+            position: relative;
+            height: 100%;
+            z-index: 99;
+            padding: 50px;
+            background-color: rgb(101, 182, 48);
+
+            transition: all .5s;
+
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 15px;
+            border-bottom: 1px solid #dceeee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Link</li>
+                <li>Link</li>
+                <li>Link</li>
+                <li>Link</li>
+                <li>Link</li>
+            </ul>
+        </div>
+        <div class="content">
+            <button id="button" value="open" onclick="menu()">Menu Open / Close</button>
+        </div>
+    </div>
+
+
+    <script>
+        function menu() {
+            var status = $('#button').val()
+
+            if (status == 'open') {
+                $('.sidebar').addClass('menu-open')
+                $('.content').addClass('open')
+                $('#button').val('close')
+
+            }
+            else {
+                $('.sidebar').removeClass('menu-open')
+                $('.content').removeClass('open')
+                $('#button').val('open')
+            }
+        }
+    </script>
+</body>
+
+</html>

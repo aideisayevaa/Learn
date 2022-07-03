@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background: lightcoral;
+            transition: 1s transform;
+            transform-origin: top left;
+            /* bunu yazanda merkez olaraq yuxari sol kuncu goturur */
+           
+           
+            /* transform-origin: 50px 100px; */
+        }
+
+        #checkbox:checked+.box {
+            transform: rotate(30deg) skew(10deg) scale(.2) translate(10px);
+            /* transform: matrix(); */
+            /* yuxarida yazilanlari matrix icerisinde de yaza bileerdik matrix 6 deyer qebul edir
+            scale x scale y skew x skew y translate x translate y */
+
+
+            /* bunu yazdiqdan sonra inspektde check formada olanda elementin transforma deyerlerini tapiriq sonra
+            computed hissede axtaris yerine computed yaziriq ve bize deyerleri mueyyen reqemlerle verir */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <input type="checkbox" id="checkbox">
+
+    <div class="box"></div>
+</body>
+
+</html>

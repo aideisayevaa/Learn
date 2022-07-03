@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 50px;
+            background-color: #18deff;
+            padding: 10px;
+
+            transition: 2s cubic-bezier(0.89, 1.39, 0, -0.54);
+/* 
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(0.1, 9, 2, 0.1); */
+            /* bele yazanda ilk yarisi 0.1 ile gelir sonra
+            4 ile gelir qayidanda yarsina qeder 2 ile sonra ise 0.1 ile qayidir */
+            /* zamanlamani idare ede bilirik */
+
+
+            /* inspect hissede transitionlarinin uzerine gelen kicik pencere ile cubic-bezierleri tenzimlemek olur */
+
+        }
+
+        div:hover {
+            width: 500px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="div1">ilk gecis</div>
+</body>
+
+</html>

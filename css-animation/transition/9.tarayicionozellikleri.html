@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 50px;
+            background-color: #18deff;
+            padding: 10px;
+
+
+            /* diger browserlerde de eyni kodun problemsiz islemesi ucun asagidaki formada yaziriq */
+
+            transition: width 2s ease 5s;
+            -webkit-transition: width 2s ease 5s;
+            -moz-transition: width 2s ease 5s;
+            -o-transition: width 2s ease 5s;
+
+        }
+
+        div:hover {
+            width: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="div1">ilk gecis</div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            border: 2px solid #333;
+            padding: 10px 20px;
+            font: bold 16px Arial, sans-serif;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            /* right: -300px; */
+            right: 0;
+            width: 300px;
+            background-color: #000;
+            height: 100%;
+            /* transition:1s cubic-bezier(0.19, 1, 0.22, 1); */
+
+            transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+            transform: translateX(100%);
+        }
+
+        .menu ul li a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 7px 0;
+        }
+
+        #checkbox:checked+.menu {
+            /* right: 0; */
+            transform: translateX(0);
+        }
+
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            /* opacity 0 olsa bele buttona kliklemek olmur ona gore visibltyne de hidden etmek lazimdi */
+            visibility: hidden;
+        }
+
+
+        .popup-inner {
+            background: #fff;
+            color: white;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* bundan istifade ederek width ve heigth ne olursa olsun hemise ortaya dogru getirir */
+        }
+
+        #checkbox:checked+.popup {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* QEYD: popup islemedi */
+
+        /* https://www.youtube.com/watch?v=YoCJpfQIO8k&t=861s */
+    </style>
+</head>
+
+<body>
+
+
+    <label for="checkbox" class="menu-btn">Menu</label>
+
+    <input type="checkbox" id="checkbox">
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Haqqimda</a></li>
+            <li><a href="#">Calisma alani</a></li>
+            <li><a href="#">blog</a></li>
+        </ul>
+    </div>
+
+
+    <div class="popup">
+        <div class="popup-inner">
+            salam
+        </div>
+    </div>
+</body>
+
+</html>

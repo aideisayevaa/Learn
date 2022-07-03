@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            transition: 1s transform;
+        }
+
+
+
+
+        .scale-box-1 {
+            background: lightblue;
+        }
+
+        .scale-box-1:hover {
+            transform: scale(0);
+        }
+
+
+
+
+        .scale-box-2 {
+            background: lightcoral;
+        }
+
+        .scale-box-2:hover {
+            transform: scale(1.5);
+        }
+
+
+
+        .scale-X {
+            background: rgb(170, 209, 41);
+        }
+
+        .scale-X:hover {
+            transform: scaleX(1.5);
+        }
+
+
+
+        .scale-Y {
+            background: rgb(209, 41, 187);
+        }
+
+        .scale-Y:hover {
+            transform: scaleY(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box scale-box-1">scale-box-1</div>
+    <div class="box scale-box-2">scale-box-2</div>
+
+
+    <div class="box scale-X">scale-X</div>
+    <div class="box scale-Y">scale-Y</div>
+
+</body>
+
+</html>

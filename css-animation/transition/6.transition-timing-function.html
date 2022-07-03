@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 50px;
+            background-color: #18deff;
+            padding: 10px;
+
+            transition: width 2s;
+
+
+        }
+
+        div:hover {
+            width: 500px;
+            background-color: red;
+        }
+
+
+        #div1 {
+            transition-timing-function: linear;
+            /* bu default xususiyyetdi yeni bunu yazmasaq da avtomtik olaraq bu teyin olunur */
+        }
+
+        #div2 {
+            transition-timing-function: ease;
+            /* biraz daha agir gedir */
+        }
+
+        #div3 {
+            transition-timing-function: ease-in;
+            /* evveli normal gelir sona qayidanda suretlenir */
+        }
+
+        #div4 {
+            transition-timing-function: ease-out;
+            /* ease in nin tersidi */
+        }
+
+        #div5 {
+            transition-timing-function: ease-in-out;
+            /* hem ease in hem ease out ikisi bbirlikde islenir */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="div1">ilk gecis</div>
+    <div id="div2">ilk gecis</div>
+    <div id="div3">ilk gecis</div>
+    <div id="div4">ilk gecis</div>
+    <div id="div5">ilk gecis</div>
+
+</body>
+
+</html>

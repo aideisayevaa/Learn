@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #18deff;
+            padding: 10px;
+
+
+            transition-property: height, width, background-color, color;
+            transition-duration: 0.5s;
+            transition-delay: 2s;
+            /* nece saniye sonra baslamagini goseririr */
+            /* divin uzerinde 2 saniye qaldiqdan sonra baslayir ve elimizi divden cekdikden 2 saniye sonra geri qayidir */
+
+        }
+
+        div:hover {
+            height: 400px;
+            width: 400px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>ilk gecis</div>
+</body>
+
+</html>

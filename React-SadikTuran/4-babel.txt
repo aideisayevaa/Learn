@@ -1,0 +1,68 @@
+Babel : https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=MYewdgzgLgBGCGBbApjAvDA5AQQJYBN5MBuAKFNElimUQAcAbeG9GAHgAsBGAPg-QYMQMAO4gATg3xsA9Nx5A&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.18.4&externalPlugins=&assumptions=%7B%7D
+
+
+const name = 'Aida';
+
+const template = <h1 id="header">hello world</h1>
+
+
+bu formada yazanda 
+
+
+
+"use strict";
+
+const name = 'Aida';
+const template = /*#__PURE__*/React.createElement("h1", {
+  id: "header"
+}, "hello world");
+
+
+ekrana bele cixarir
+
+
+
+https://babeljs.io/docs/en/plugins-list
+bu sehifede her versia ile gelen xususiyyetler var
+
+
+
+
+babel-in qurasdirilmasi: 
+
+package.json elave edirik:  1)npm init -y
+
+2)npm install --save-dev @babel/core @babel/cli
+
+bele yazandan sonra package.json daxilinde 
+
+ "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2"
+  },
+
+elave edir
+
+3)npm install --save-dev @babel/preset-env
+4)npm install --save-dev @babel/preset-react
+
+
+5) my_app folderi daxilinde .babelrc adli fayli elave edirik ve daxiline yaziriq: 
+
+{
+    "presets": ["@babel/preset-env","@babel/preset-react"]
+}
+
+
+
+
+
+
+Babel Nedir?
+Babel, ECMAScript 2015+ kodunu mevcut ve eski tarayıcılarda veya ortamlarda geriye dönük olarak uyumlu bir JavaScript sürümüne dönüştürmek için kullanılan bir araçtır.
+
+Yeni özellikler standartlaştırıldığında, tarayıcılar yavaş yavaş yeni özellikleri benimsemeye başlar. Bu yüzden Babel kullanmak bizler için bir nevi zorunluluk.
+Örneğin, Chrome bir özelliği desteklerken, Safari desteklemez. Bunun gibi farklı JavaScript özellikleri için yüzlerce varyasyon olduğunu düşünün.
+Tarayıcıların yeni sürümleri piyasaya sürüldüğünde, tüm kullanıcılar makinelerinde en son yazılımı çalıştırmayı umursamadığından dolayı tüm kullanıcılar hemen yazılımını upgrade etmez.
+
+Tüm bunların anlamı ise, ya Babel gibi compiler ile kodumuzu tüm tarayıcıların anlayabileceği ES5'e çevireceğiz ya da ES6 ile gelen özelliklerin hiç birini kullanamayacağız...
