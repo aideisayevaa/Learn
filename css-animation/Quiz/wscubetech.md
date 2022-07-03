@@ -1,8 +1,8 @@
-5. How to add text shadow using CSS3?
- A. font: shadowed 5px 5px 5px grey;
- B. font-shadow: 5px 5px 5px grey; 
- C. text-shadow: 5px 5px 5px grey;     +
- D. shadow: text 5px 5px 5px grey;
+ - 5. How to add text shadow using CSS3?
+   - A. font: shadowed 5px 5px 5px grey;
+   - B. font-shadow: 5px 5px 5px grey; 
+   - C. text-shadow: 5px 5px 5px grey;     +
+   - D. shadow: text 5px 5px 5px grey;
 
  
  text-shadow: 5px 5px 10px #00FF00;
